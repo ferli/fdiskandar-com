@@ -1,0 +1,148 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                   ARTICLE SUBMISSION: QUICK REFERENCE                       ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+WORKFLOW (4 SIMPLE STEPS):
+
+  1. YOU RESEARCH (2-6 hours)
+     └─ Use ChatGPT, Claude.ai, Gemini, or any tool
+     └─ Gather findings, data, sources, examples
+     └─ No special format needed
+
+  2. SAVE TO FILE (5 minutes)
+     └─ PDF:  Copy findings to PDF file
+     └─ DOCX: Paste into Word document
+     └─ MD:   Create markdown file with sections
+     └─ Filename: [article-title]-research.[pdf/docx/md]
+
+  3. SUBMIT TO CLAUDE CODE (2 minutes)
+     ├─ Attach research file
+     ├─ Fill intake form (ARTICLE_INTAKE_FORM.md)
+     ├─ Describe what you want
+     └─ Send message
+
+  4. WAIT 45-75 MINUTES
+     └─ Claude Code reads → writes → publishes
+     └─ You get live URL + confirmation
+
+────────────────────────────────────────────────────────────────────────────
+
+SUBMISSION TEMPLATE:
+
+  FILE: [your-research-file.pdf]
+
+  ARTICLE DETAILS:
+  - Title: [Article Title]
+  - Section: [insights / resources / pemikiran]
+  - Target audience: [Who reads this]
+  - Target length: [2000-3000 words, or flexible]
+
+  KEY INSTRUCTIONS:
+  [Any specific guidance]
+
+  RESEARCH CONTAINS:
+  [Brief description of findings]
+
+────────────────────────────────────────────────────────────────────────────
+
+TURNAROUND TIME:
+
+  Read research file    → 15 min
+  Extract findings      → 15 min
+  Write article         → 30-45 min
+  Add citations         → 10 min
+  Commit & deploy       → 10 min
+  ─────────────────────────────
+  TOTAL                 → 45-75 min (article LIVE)
+
+────────────────────────────────────────────────────────────────────────────
+
+WHAT MAKES GOOD RESEARCH INPUT:
+
+  ✅ DO:
+     • Substantive findings (5-10+ sources)
+     • Key data & statistics (with sources mentioned)
+     • Concrete examples & case studies
+     • Original synthesis (not just summaries)
+     • Multiple perspectives
+
+  ❌ DON'T:
+     • Single source only
+     • Unstructured text dump
+     • Only summaries (no analysis)
+     • No sources mentioned
+     • Vague claims
+
+────────────────────────────────────────────────────────────────────────────
+
+KEY FILES:
+
+  ARTICLE_SUBMISSION_GUIDE.md
+    └─ Read this first (complete guide)
+
+  ARTICLE_INTAKE_FORM.md
+    └─ Copy & fill when submitting
+
+  SIMPLIFIED_WORKFLOW_SUMMARY.md
+    └─ One-page overview
+
+────────────────────────────────────────────────────────────────────────────
+
+EXAMPLE SUBMISSION:
+
+  FILE: benchmark-pdam-research.pdf
+
+  ARTICLE DETAILS:
+  - Title: Benchmark Kinerja PDAM Indonesia
+  - Section: insights
+  - Target audience: PDAM leaders and regulators
+  - Target length: 2500-3000 words
+
+  KEY INSTRUCTIONS:
+  Focus on practical implications for PDAM managers.
+  Include financial ROI calculations.
+  Highlight best practices from top performers.
+
+  RESEARCH CONTAINS:
+  - NRW statistics 2015-2025 from government & PERPAMSI
+  - Case studies from 4 PDAM (different tiers)
+  - Cost recovery analysis
+  - Service quality benchmarks
+
+────────────────────────────────────────────────────────────────────────────
+
+FAQ:
+
+  Q: Can I use ChatGPT research?
+  A: Yes. That's the whole point. Use whatever tool works.
+
+  Q: What format should research file be?
+  A: PDF, DOCX, or MD. Doesn't matter. PDF is easiest.
+
+  Q: How long until article is published?
+  A: 45-75 minutes from submission to live URL.
+
+  Q: Can I request changes after publishing?
+  A: Yes. Tell me what to change. I'll update & redeploy (30 min).
+
+  Q: Do you fact-check my research?
+  A: No. I assume you did that. I work with what you provide.
+
+  Q: Can I review draft before publishing?
+  A: Yes. Check "review first" on intake form.
+
+────────────────────────────────────────────────────────────────────────────
+
+NEXT STEPS:
+
+  1. Read ARTICLE_SUBMISSION_GUIDE.md
+  2. Do your research (2-6 hours)
+  3. Save to file (PDF/DOCX/MD)
+  4. Fill out ARTICLE_INTAKE_FORM.md
+  5. Submit to Claude Code
+  6. Wait ~1 hour for article to be published
+
+────────────────────────────────────────────────────────────────────────────
+
+THAT'S IT! Simple, efficient, fast. 🚀
+
