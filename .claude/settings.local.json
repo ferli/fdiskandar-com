@@ -10,7 +10,8 @@
       "Bash(wrangler pages list:*)",
       "Bash(wrangler pages project create:*)",
       "Bash(wrangler pages project list:*)",
-      "Bash(wrangler pages project create-deployment-config:*)"
+      "Bash(wrangler pages project create-deployment-config:*)",
+      "Bash(ls:*)"
     ]
   }
 }
