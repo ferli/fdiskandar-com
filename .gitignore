@@ -1,0 +1,37 @@
+# Hugo build outputs
+public/
+resources/
+.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
+*.local
+
+# Sensitive data
+*.pem
+*.key
+secrets.json
+
+# Dependencies (if using Node.js for build tools)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# IDE
+*.sublime-project
+*.sublime-workspace
