@@ -1,0 +1,5 @@
+# Redirect all traffic from rinji.id to fdiskandar.com (301 permanent redirect)
+https://rinji.id/* https://fdiskandar.com/:splat 301
+http://rinji.id/* https://fdiskandar.com/:splat 301
+https://www.rinji.id/* https://fdiskandar.com/:splat 301
+http://www.rinji.id/* https://fdiskandar.com/:splat 301

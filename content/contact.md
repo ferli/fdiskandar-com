@@ -9,9 +9,9 @@ Saya tertarik untuk membantu organisasi Anda dengan transformasi digital, govern
 
 ### Cara Menghubungi
 
-**Email:** [contact@rinji.id](mailto:contact@rinji.id)
+**Email:** [ferli.deni.iskandar@gmail.com](ferli.deni.iskandar@gmail.com)
 
-**LinkedIn:** [FD Iskandar](https://linkedin.com/in/fd-iskandar)
+**LinkedIn:** [FD Iskandar](https://linkedin.com/in/ferli)
 
 ---
 
