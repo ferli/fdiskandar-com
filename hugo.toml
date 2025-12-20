@@ -1,0 +1,77 @@
+baseURL = "https://rinji.id/"
+languageCode = "id"
+defaultContentLanguage = "id"
+title = "FD Iskandar | Strategic Technologist"
+theme = "PaperMod"
+
+# Build settings
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+# Pagination
+pagination.pagerSize = 10
+
+[params]
+  env = "production"
+  description = "30+ tahun expertise di industri utilitas air Indonesia. Spesialisasi: Digital Transformation, GRC, NRW Management, Cybersecurity."
+  author = "FD Iskandar"
+  keywords = ["konsultan PDAM", "digitalisasi utilitas air", "NRW PDAM", "GRC water utility"]
+  images = ["/images/og-image.png"]
+
+  [params.homeInfoParams]
+    Title = "Strategic Technologist for Water Utilities"
+    Content = "Membantu organisasi air bertransformasi secara digital dengan governance yang kuat.\n\n**30+ tahun pengalaman** | **4 domain expertise** | **Publikasi & knowledge sharing**"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/fd-iskandar"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:contact@rinji.id"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "expertise"
+    name = "Expertise"
+    url = "/expertise/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "articles"
+    name = "Articles"
+    url = "/articles/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "monokai"
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
