@@ -1,4 +1,4 @@
-baseURL = "https://rinji.id/"
+baseURL = "https://fdiskandar.com/"
 languageCode = "id"
 defaultContentLanguage = "id"
 title = "FD Iskandar | Strategic Technologist"
@@ -27,36 +27,48 @@ pagination.pagerSize = 10
 
   [[params.socialIcons]]
     name = "linkedin"
-    url = "https://linkedin.com/in/fd-iskandar"
+    url = "https://linkedin.com/in/ferli"
 
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:contact@rinji.id"
+    url = "mailto:ferli.deni.iskandar@gmail.com"
 
 [menu]
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "Tentang"
     url = "/about/"
     weight = 1
 
   [[menu.main]]
     identifier = "expertise"
-    name = "Expertise"
+    name = "Keahlian"
     url = "/expertise/"
     weight = 2
 
   [[menu.main]]
-    identifier = "articles"
-    name = "Articles"
-    url = "/articles/"
+    identifier = "insights"
+    name = "Analisis & Wawasan"
+    url = "/insights/"
     weight = 3
 
   [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
+    identifier = "resources"
+    name = "Resources & Panduan"
+    url = "/resources/"
     weight = 4
+
+  [[menu.main]]
+    identifier = "pemikiran"
+    name = "Pemikiran Strategis"
+    url = "/pemikiran/"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Hubungi"
+    url = "/contact/"
+    weight = 6
 
 [taxonomies]
   category = "categories"
