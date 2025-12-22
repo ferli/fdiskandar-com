@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Keahlian on FD Iskandar | Strategic Technologist</title>
-    <link>http://localhost:56146/expertise/</link>
+    <link>https://fdiskandar.com/expertise/</link>
     <description>Recent content in Keahlian on FD Iskandar | Strategic Technologist</description>
     <image>
       <title>FD Iskandar | Strategic Technologist</title>
-      <url>http://localhost:56146/images/og-image.png</url>
-      <link>http://localhost:56146/images/og-image.png</link>
+      <url>https://fdiskandar.com/images/og-image.png</url>
+      <link>https://fdiskandar.com/images/og-image.png</link>
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>id</language>
-    <atom:link href="http://localhost:56146/expertise/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://fdiskandar.com/expertise/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Keamanan Siber</title>
-      <link>http://localhost:56146/expertise/cybersecurity/</link>
+      <link>https://fdiskandar.com/expertise/cybersecurity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56146/expertise/cybersecurity/</guid>
+      <guid>https://fdiskandar.com/expertise/cybersecurity/</guid>
       <description>Strategi keamanan siber untuk infrastruktur kritis utilitas air</description>
     </item>
     <item>
       <title>Pengurangan Air Hilang (NRW)</title>
-      <link>http://localhost:56146/expertise/nrw/</link>
+      <link>https://fdiskandar.com/expertise/nrw/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56146/expertise/nrw/</guid>
+      <guid>https://fdiskandar.com/expertise/nrw/</guid>
       <description>Strategi sistematis pengurangan air hilang (NRW) untuk utilitas air</description>
     </item>
     <item>
       <title>Tata Kelola, Risiko &amp; Kepatuhan (GRC)</title>
-      <link>http://localhost:56146/expertise/grc/</link>
+      <link>https://fdiskandar.com/expertise/grc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56146/expertise/grc/</guid>
+      <guid>https://fdiskandar.com/expertise/grc/</guid>
       <description>Framework GRC untuk utilitas air dan infrastruktur kritis</description>
     </item>
     <item>
       <title>Transformasi Digital</title>
-      <link>http://localhost:56146/expertise/digital-transformation/</link>
+      <link>https://fdiskandar.com/expertise/digital-transformation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56146/expertise/digital-transformation/</guid>
+      <guid>https://fdiskandar.com/expertise/digital-transformation/</guid>
       <description>Strategi dan panduan transformasi digital untuk utilitas air Indonesia</description>
     </item>
   </channel>
