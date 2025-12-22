@@ -1,0 +1,349 @@
+/* Modern Layout & Spacing Improvements */
+
+/* Better container spacing */
+.main {
+  max-width: 900px;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+}
+
+.post-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* Header improvements */
+.header {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 26, 77, 0.95);
+  border-bottom: 1px solid var(--accent-glow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.nav {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 26, 77, 0.95);
+  border-bottom: 1px solid var(--accent-glow);
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.logo a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color var(--transition-normal) ease;
+}
+
+.logo a:hover {
+  color: var(--accent-bright);
+}
+
+/* Navigation items */
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  align-items: center;
+}
+
+#menu li a {
+  padding: 0.5rem 1rem;
+  color: var(--secondary);
+  transition: all var(--transition-normal) ease;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+
+#menu li a:hover {
+  color: var(--accent-bright);
+  border-bottom-color: var(--accent-blue);
+}
+
+#menu li a.active,
+#menu li a span.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+/* Page header */
+.page-header {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.page-header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  background: linear-gradient(90deg, var(--primary), var(--accent-bright));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.post-description {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+/* Card/Entry improvements */
+.post-entry {
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border);
+  transition: all var(--transition-normal) ease;
+  display: block;
+}
+
+.post-entry:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--accent-glow);
+  border-color: var(--accent-blue);
+}
+
+.post-entry .entry-header h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  transition: color var(--transition-normal) ease;
+}
+
+.post-entry:hover .entry-header h2 {
+  color: var(--accent-bright);
+}
+
+.entry-content {
+  color: var(--secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.entry-footer {
+  font-size: 0.85rem;
+  color: var(--tertiary);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Typography hierarchy */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--accent-blue);
+  padding-left: 1rem;
+  color: var(--primary);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+h4, h5, h6 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+  color: var(--content);
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  color: var(--content);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--accent-blue);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  color: var(--secondary);
+  font-style: italic;
+  background: rgba(0, 82, 204, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Code blocks */
+pre {
+  background: var(--hljs-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+  line-height: 1.5;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+/* Inline code */
+:not(pre) > code {
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  background: var(--code-bg);
+  color: var(--accent-bright);
+}
+
+/* Links */
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color var(--transition-fast) ease;
+  position: relative;
+}
+
+a:hover {
+  color: var(--accent-bright);
+  text-shadow: 0 0 8px var(--accent-glow);
+}
+
+/* Footer */
+.footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  border-top: 2px solid var(--border);
+  text-align: center;
+  color: var(--secondary);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 26, 77, 0.3) 100%);
+}
+
+.footer a {
+  color: var(--accent-blue);
+  transition: color var(--transition-normal) ease;
+}
+
+.footer a:hover {
+  color: var(--accent-bright);
+}
+
+/* Top link button */
+.top-link {
+  background: var(--accent-blue);
+  color: var(--theme);
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-normal) ease;
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.top-link:hover {
+  background: var(--accent-bright);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px var(--accent-glow);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main {
+    padding: 2rem 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .post-entry {
+    padding: 1.5rem;
+  }
+
+  #menu {
+    gap: 0.25rem;
+  }
+
+  #menu li a {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background: rgba(0, 82, 204, 0.1);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--accent-bright);
+  border-bottom: 2px solid var(--border);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--content);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background: rgba(0, 82, 204, 0.05);
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  margin: 2rem 0;
+}

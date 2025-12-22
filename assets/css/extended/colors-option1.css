@@ -1,0 +1,91 @@
+/* Deep Midnight Blue Color Scheme */
+/* Primary: #001a4d (very dark, sophisticated) */
+/* Accent: #0052cc (vibrant ocean blue) */
+
+:root {
+  /* Base ocean blue theme */
+  --theme: #001a4d;
+  --entry: #002366;
+  --primary: #e8f1f5;
+  --secondary: #a8c5da;
+  --tertiary: #1e4d7b;
+  --content: #d4e4f0;
+  --hljs-bg: #00132e;
+  --code-bg: #001a4d;
+  --border: #00356b;
+
+  /* Accent colors */
+  --accent-blue: #0052cc;
+  --accent-bright: #1e88e5;
+  --accent-glow: rgba(0, 82, 204, 0.3);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #001233 0%, #001a4d 100%);
+  --gradient-subtle: linear-gradient(180deg, #001a4d 0%, #002366 100%);
+
+  /* Animation timings */
+  --transition-fast: 0.2s;
+  --transition-normal: 0.3s;
+  --transition-slow: 0.5s;
+}
+
+/* Force dark mode */
+html {
+  color-scheme: dark only;
+}
+
+/* Override any light mode preferences */
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark only;
+  }
+}
+
+/* Ensure body and main elements use the theme */
+body {
+  background: var(--theme);
+  color: var(--primary);
+}
+
+.list {
+  background: var(--theme);
+}
+
+.toc {
+  background: var(--entry);
+}
+
+/* Code block styling */
+pre {
+  background: var(--hljs-bg) !important;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+code {
+  background: var(--code-bg);
+  color: var(--accent-bright);
+}
+
+/* Link styling */
+a {
+  color: var(--accent-blue);
+}
+
+a:visited {
+  color: var(--accent-blue);
+}
+
+/* Ensure contrast on various backgrounds */
+.post-content {
+  color: var(--content);
+}
+
+.post-meta {
+  color: var(--secondary);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+}

@@ -1,0 +1,91 @@
+/* Ocean Depths Blue Color Scheme */
+/* Primary: #0d1b2a (blue-black) */
+/* Accent: #2a9d8f (teal accent for contrast) */
+
+:root {
+  /* Base ocean blue theme */
+  --theme: #0d1b2a;
+  --entry: #0f2a3d;
+  --primary: #dceef5;
+  --secondary: #9bb5c9;
+  --tertiary: #1a4d63;
+  --content: #cce8f0;
+  --hljs-bg: #050f18;
+  --code-bg: #0d1b2a;
+  --border: #0f3a52;
+
+  /* Accent colors */
+  --accent-blue: #2a9d8f;
+  --accent-bright: #4db8a8;
+  --accent-glow: rgba(42, 157, 143, 0.3);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #020c1b 0%, #0d1b2a 100%);
+  --gradient-subtle: linear-gradient(180deg, #0d1b2a 0%, #0f2a3d 100%);
+
+  /* Animation timings */
+  --transition-fast: 0.2s;
+  --transition-normal: 0.3s;
+  --transition-slow: 0.5s;
+}
+
+/* Force dark mode */
+html {
+  color-scheme: dark only;
+}
+
+/* Override any light mode preferences */
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark only;
+  }
+}
+
+/* Ensure body and main elements use the theme */
+body {
+  background: var(--theme);
+  color: var(--primary);
+}
+
+.list {
+  background: var(--theme);
+}
+
+.toc {
+  background: var(--entry);
+}
+
+/* Code block styling */
+pre {
+  background: var(--hljs-bg) !important;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+code {
+  background: var(--code-bg);
+  color: var(--accent-bright);
+}
+
+/* Link styling */
+a {
+  color: var(--accent-blue);
+}
+
+a:visited {
+  color: var(--accent-blue);
+}
+
+/* Ensure contrast on various backgrounds */
+.post-content {
+  color: var(--content);
+}
+
+.post-meta {
+  color: var(--secondary);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+}

@@ -1,0 +1,437 @@
+/* Custom Styling: Glassmorphism, Glow Effects, and Polish */
+
+/* === Glassmorphism Effects === */
+
+.post-entry,
+.entry,
+.card {
+  background: rgba(0, 35, 102, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Stronger glassmorphism for navigation */
+.header,
+.nav {
+  background: rgba(0, 26, 77, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* === Glow Effects === */
+
+/* Glow on focus elements */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px var(--accent-glow), 0 4px 12px rgba(0, 82, 204, 0.2);
+  background: rgba(0, 35, 102, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+/* Glow effect on important links */
+a.important,
+a.cta {
+  position: relative;
+  color: var(--accent-bright);
+  font-weight: 600;
+}
+
+a.important::after,
+a.cta::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-bright));
+  border-radius: 2px;
+}
+
+/* === Smooth Scrolling === */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Custom Scrollbar === */
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-blue);
+  border-radius: 6px;
+  transition: background var(--transition-normal) ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-bright);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-color: var(--accent-blue) var(--theme);
+  scrollbar-width: thin;
+}
+
+/* === Selection Styling === */
+
+::selection {
+  background: var(--accent-blue);
+  color: var(--theme);
+}
+
+::-moz-selection {
+  background: var(--accent-blue);
+  color: var(--theme);
+}
+
+/* === Focus Visible (Keyboard Navigation) === */
+
+:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* === Gradient Text Effects === */
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--accent-bright));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h1 {
+  background: linear-gradient(90deg, var(--primary), var(--accent-bright));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* === Enhanced Code Block Styling === */
+
+pre {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  background: linear-gradient(135deg, rgba(0, 19, 46, 0.8), rgba(0, 35, 102, 0.6));
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--border);
+}
+
+pre::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-glow), transparent);
+}
+
+/* Code line numbers if using them */
+.ln {
+  color: var(--tertiary);
+  user-select: none;
+  padding-right: 1.5rem;
+}
+
+/* === Highlighted Code Syntax Colors (if using highlight.js) === */
+
+.hljs-string,
+.hljs-attr {
+  color: #4db8a8;
+}
+
+.hljs-number,
+.hljs-literal {
+  color: #0052cc;
+}
+
+.hljs-keyword {
+  color: #1e88e5;
+}
+
+.hljs-function {
+  color: #2a9d8f;
+}
+
+.hljs-comment {
+  color: #5a7a8a;
+  font-style: italic;
+}
+
+/* === Border and Divider Styling === */
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-blue), transparent);
+  margin: 2rem 0;
+  border-radius: 2px;
+}
+
+/* === List Styling Enhancements === */
+
+ul {
+  list-style-position: inside;
+}
+
+ul > li::marker {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+ol > li::marker {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+/* === Blockquote Styling === */
+
+blockquote {
+  border-left: 4px solid var(--accent-blue);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  color: var(--secondary);
+  font-style: italic;
+  background: linear-gradient(90deg, rgba(0, 82, 204, 0.1), transparent);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  backdrop-filter: blur(5px);
+}
+
+blockquote::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--accent-blue), var(--accent-bright));
+  border-radius: 0 0 0 0;
+}
+
+/* === Table Enhancements === */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  background: rgba(0, 35, 102, 0.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+thead {
+  background: linear-gradient(90deg, rgba(0, 82, 204, 0.2), rgba(0, 82, 204, 0.1));
+  border-bottom: 2px solid var(--accent-blue);
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 700;
+  color: var(--accent-bright);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0, 82, 204, 0.1);
+  color: var(--content);
+}
+
+tbody tr:hover {
+  background: rgba(0, 82, 204, 0.1);
+  backdrop-filter: blur(3px);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* === Image Styling === */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: all var(--transition-normal) ease;
+  border: 1px solid var(--border);
+}
+
+img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px var(--accent-glow);
+  border-color: var(--accent-blue);
+}
+
+/* === Badge and Tag Styling === */
+
+.tag,
+.badge,
+.label {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: rgba(0, 82, 204, 0.2);
+  color: var(--accent-bright);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--accent-blue);
+  transition: all var(--transition-normal) ease;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag:hover,
+.badge:hover,
+.label:hover {
+  background: var(--accent-blue);
+  color: var(--theme);
+  box-shadow: 0 4px 12px var(--accent-glow);
+  transform: translateY(-2px);
+}
+
+/* === Alert and Notice Styling === */
+
+.alert,
+.notice,
+.info,
+.warning,
+.error {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+  background: rgba(0, 82, 204, 0.1);
+  backdrop-filter: blur(5px);
+  border-color: var(--accent-blue);
+}
+
+.alert {
+  color: var(--accent-bright);
+}
+
+.warning {
+  border-color: #ffb74d;
+  background: rgba(255, 183, 77, 0.1);
+  color: #ffb74d;
+}
+
+.error {
+  border-color: #ef5350;
+  background: rgba(239, 83, 80, 0.1);
+  color: #ef5350;
+}
+
+.success {
+  border-color: #66bb6a;
+  background: rgba(102, 187, 106, 0.1);
+  color: #66bb6a;
+}
+
+/* === Description List Styling === */
+
+dt {
+  font-weight: 700;
+  color: var(--accent-bright);
+  margin-top: 1rem;
+}
+
+dd {
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--content);
+}
+
+/* === Separator Styling === */
+
+.divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  margin: 2rem 0;
+  border-radius: 2px;
+}
+
+/* === Loading Skeleton === */
+
+.skeleton {
+  background: linear-gradient(90deg, var(--entry) 25%, var(--border) 50%, var(--entry) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* === Print Styles === */
+
+@media print {
+  .top-link,
+  .nav,
+  .footer {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  a {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    page-break-inside: avoid;
+  }
+}
+
+/* === Dark mode specific enhancements === */
+
+@supports (backdrop-filter: blur(10px)) {
+  .post-entry,
+  .header,
+  .nav {
+    background: rgba(0, 26, 77, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+/* Fallback for browsers without backdrop-filter support */
+@supports not (backdrop-filter: blur(10px)) {
+  .post-entry,
+  .header,
+  .nav {
+    background: var(--entry);
+  }
+}
