@@ -6,9 +6,9 @@ date: 2025-12-11
 
 ## Checklist Pengurangan Air Hilang (NRW)
 
-Saya membuat checklist ini berdasarkan puluhan NRW reduction program yang saya dampingi. Checklist ini membantu menstruktur perjalanan dari "we have a big NRW problem" menjadi "here's systematic plan untuk fix it."
+Checklist ini lahir dari upaya praktis tim lapangan dan tim analitik yang berusaha mengurangi air hilang. Tujuannya sederhana: membantu mengubah "Kami punya masalah NRW besar" menjadi "Ini rencana sistematik untuk mengatasinya—dan ini langkah pertamanya."
 
-Checklist ini dirancang untuk membantu utilitas air dalam conducting assessment NRW dan merencanakan reduction program secara sistematis. Gunakan untuk identify gap, prioritize action, dan track progress implementasi. Setiap bagian memiliki detailed checklist dan "target state" untuk guidance—gunakan sesuai dengan konteks organisasi Anda, dan involve external expert ketika dibutuhkan untuk technical assessment.
+Alat ini dirancang untuk membantu utilitas air dalam melakukan assessment NRW dan merencanakan program pengurangan secara bertahap. Gunakan untuk mengidentifikasi celah, memprioritaskan tindakan, dan melacak kemajuan implementasi. Setiap bagian dilengkapi dengan daftar pertanyaan dan "target state" sebagai panduan—sesuaikan dengan konteks organisasi Anda, dan libatkan ahli eksternal ketika diperlukan untuk analisis teknis mendalam.
 
 ---
 

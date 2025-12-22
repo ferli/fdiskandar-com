@@ -6,9 +6,9 @@ date: 2025-12-12
 
 ## Framework Tata Kelola IT (GRC) untuk Utilitas Air
 
-Saya mengembangkan framework ini setelah membantu puluhan utilitas air setup atau improve governance structure mereka. Yang saya pelajari adalah: governance bukan "one-size-fits-all". utilitas air besar membutuhkan struktur formal dengan council meetings; utilitas air kecil bisa dengan approach lebih lean. Yang penting adalah clarity tentang roles, accountability, dan decision-making—regardless dari formality level.
+Framework ini lahir dari diskusi dengan berbagai utilitas air yang berusaha membangun atau memperbaiki struktur tata kelola IT mereka. Yang saya pelajari adalah: governance bukan "one-size-fits-all". Utilitas air besar membutuhkan struktur formal dengan rapat berkala; utilitas air kecil bisa dengan pendekatan lebih ringkas. Yang penting adalah kejelasan tentang peran, akuntabilitas, dan cara membuat keputusan—terlepas dari tingkat formalitas.
 
-Framework GRC (Governance, Risk & Compliance) yang kuat adalah fondasi untuk operasi IT yang reliable, efficient, dan compliant. Panduan ini provides practical framework yang dapat diadopt atau disesuaikan oleh utilitas air dalam developing IT governance structure mereka—sesuai dengan ukuran, kompleksitas, dan maturity level organisasi.
+Panduan ini menawarkan kerangka praktis yang dapat diadopsi atau disesuaikan oleh utilitas air dalam mengembangkan struktur tata kelola IT mereka—sesuai dengan ukuran, kompleksitas, dan tingkat kematangan organisasi. Tidak ada dokumen yang sempurna; ada hanya alat bantu yang perlu diintegrasikan dengan budaya dan kebutuhan spesifik Anda.
 
 ### Framework Structure Overview
 
