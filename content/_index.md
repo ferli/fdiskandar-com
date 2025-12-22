@@ -7,7 +7,7 @@ description: "30+ tahun membantu transformasi digital industri utilitas air Indo
 
 Selama lebih dari 30 tahun, saya bekerja di industri IT dan infrastruktur air Indonesia. Yang saya pelajari adalah bahwa transformasi digital paling berhasil ketika dibangun atas fondasi governance yang kuat, operasi yang efisien, dan komitmen pada keberlanjutan.
 
-Saya bekerja dengan berbagai stakeholder — dari direksi PDAM yang menghadapi tantangan transformasi digital, manajer operasional yang mencari efisiensi, tim IT yang berjuang dengan sistem legacy, vendor teknologi yang ingin memahami kebutuhan pasar, hingga regulator yang perlu memastikan akuntabilitas. Setiap perspektif unik, dan setiap memberikan pembelajaran berharga.
+Saya bekerja dengan berbagai stakeholder — dari direksi utilitas air yang menghadapi tantangan transformasi digital, manajer operasional yang mencari efisiensi, tim IT yang berjuang dengan sistem legacy, vendor teknologi yang ingin memahami kebutuhan pasar, hingga regulator yang perlu memastikan akuntabilitas. Setiap perspektif unik, dan setiap memberikan pembelajaran berharga.
 
 **Fokus saya:** Membantu industri air Indonesia berkembang melalui transformasi digital yang bertanggung jawab, governance yang transparan, dan operasi yang optimal.
 
@@ -15,7 +15,7 @@ Saya bekerja dengan berbagai stakeholder — dari direksi PDAM yang menghadapi t
 
 ## Untuk Siapa Konten Ini?
 
-**Pemimpin PDAM & Utilitas Air**
+**Pemimpin utilitas air & Utilitas Air**
 Strategi transformasi digital, governance framework, manajemen risiko vendor
 
 **Manajer Operasional & Tim IT**
@@ -61,7 +61,7 @@ Proteksi infrastruktur kritis, SCADA security, perlindungan data pelanggan, inci
 
 Melalui platform ini, saya berbagi:
 
-- **Insight strategis** — Analisis mendalam tentang tren dan tantangan industri air berdasarkan pengalaman saya membantu puluhan PDAM
+- **Insight strategis** — Analisis mendalam tentang tren dan tantangan industri air berdasarkan pengalaman saya membantu puluhan utilitas air
 - **Framework praktis** — Template, checklist, dan panduan yang sudah terbukti dalam implementasi nyata
 - **Pembelajaran dari lapangan** — Case studies dan insights dari transformasi digital yang saya dampingi, apa yang berhasil dan apa yang tidak
 - **Edukasi berkelanjutan** — Artikel, panduan, dan resources yang dirancang untuk membantu Anda dan tim meningkatkan kapabilitas

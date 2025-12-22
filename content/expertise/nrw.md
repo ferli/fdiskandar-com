@@ -5,18 +5,18 @@ description: "Strategi sistematis pengurangan air hilang (NRW) untuk utilitas ai
 
 ## Pengurangan Air Hilang (NRW) untuk Utilitas Air
 
-NRW adalah salah satu area yang paling membuat saya excited dalam bekerja dengan PDAM. Mengapa? Karena ini adalah domain di mana impact langsung bisa diukur—tidak abstract, tapi real: revenue meningkat, customers lebih puas, lingkungan lebih terlindungi. Saya telah membantu puluhan PDAM mencapai NRW reduction signifikan, dan setiap project memberikan learning yang berharga.
+NRW adalah salah satu area yang paling membuat saya excited dalam bekerja dengan utilitas air. Mengapa? Karena ini adalah domain di mana impact langsung bisa diukur—tidak abstract, tapi real: revenue meningkat, customers lebih puas, lingkungan lebih terlindungi. Saya telah membantu puluhan utilitas air mencapai NRW reduction signifikan, dan setiap project memberikan learning yang berharga.
 
 Pengurangan Air Hilang (NRW — Non-Revenue Water) adalah air yang diproduksi namun tidak menghasilkan revenue karena dua sebab utama: kebocoran pada infrastruktur (physical loss) atau kehilangan komersial akibat kesalahan meter, koneksi ilegal, atau billing inefficiency (commercial loss).
 
-Untuk rata-rata PDAM Indonesia, NRW mencapai 30-40%—ini adalah peluang improvement signifikan yang juga berdampak langsung terhadap sustainability dan financial viability organisasi. Dengan pendekatan yang tepat, pengurangan 5-10% NRW dalam 2-3 tahun adalah realistic dan achievable.
+Untuk rata-rata utilitas air Indonesia, NRW mencapai 30-40%—ini adalah peluang improvement signifikan yang juga berdampak langsung terhadap sustainability dan financial viability organisasi. Dengan pendekatan yang tepat, pengurangan 5-10% NRW dalam 2-3 tahun adalah realistic dan achievable.
 
 ### Mengapa NRW Reduction Penting
 
 NRW bukan sekadar masalah finansial—ini adalah challenge multi-dimensi:
 
-- **Revenue Loss Langsung** — NRW 30% berarti kehilangan 30% potential revenue dari volume produksi yang sama. Untuk PDAM dengan target revenue Rp 500 miliar, ini setara kehilangan Rp 150 miliar setiap tahun
-- **Biaya Operasional Lebih Tinggi** — Untuk memenuhi demand yang sama dengan NRW tinggi, PDAM harus produce lebih banyak air, mengkonsumsi lebih banyak energi, chemical treatment, dan maintenance effort
+- **Revenue Loss Langsung** — NRW 30% berarti kehilangan 30% potential revenue dari volume produksi yang sama. Untuk utilitas air dengan target revenue Rp 500 miliar, ini setara kehilangan Rp 150 miliar setiap tahun
+- **Biaya Operasional Lebih Tinggi** — Untuk memenuhi demand yang sama dengan NRW tinggi, utilitas air harus produce lebih banyak air, mengkonsumsi lebih banyak energi, chemical treatment, dan maintenance effort
 - **Sustainability Lingkungan** — Sumber daya air yang terbatas semakin tertekan; extraction yang berlebihan dari sumur/sungai tidak sustainable jangka panjang
 - **Kepuasan Pelanggan Rendah** — Frequent water outages karena insufficient supply meningkatkan customer complaints, payment resistance, dan public perception negatif
 - **Risiko Regulasi** — Regulator dan media semakin fokus pada water loss; organisasi dengan NRW tinggi menjadi target scrutiny
@@ -64,11 +64,11 @@ Dengan roadmap yang clear dan consistent execution:
 - **Year 2:** Cumulative 8-10% reduction (infrastructure repairs, AMI deployment, operational procedures matured)
 - **Year 3+:** Sustained reduction dengan continuous improvement (maintenance excellence, data quality, technology optimization)
 
-Untuk PDAM dengan revenue Rp 500 miliar, 10% NRW reduction = Rp 50 miliar additional revenue annually—atau significant cost savings jika reinvested untuk expansion/maintenance.
+Untuk utilitas air dengan revenue Rp 500 miliar, 10% NRW reduction = Rp 50 miliar additional revenue annually—atau significant cost savings jika reinvested untuk expansion/maintenance.
 
 ### Stakeholder Value
 
-**Untuk Pemimpin PDAM:** NRW reduction adalah quick win untuk bottom line improvement sambil demonstrating progress pada regulators dan public
+**Untuk Pemimpin utilitas air:** NRW reduction adalah quick win untuk bottom line improvement sambil demonstrating progress pada regulators dan public
 
 **Untuk Manajer Operasional:** Dengan monitoring systems modern, tim dapat work smarter (data-driven) bukan harder (reactive firefighting)
 

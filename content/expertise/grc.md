@@ -16,7 +16,7 @@ Utilitas air di Indonesia beroperasi dalam ekosistem regulasi yang kompleks dan 
 - **Undang-Undang Perlindungan Data Pribadi (PDP)** — Compliance mandatory untuk data pelanggan, karyawan, dan pihak ketiga
 - **Undang-Undang BPJS** — Persyaratan manfaat karyawan dan keamanan sosial
 - **Audit BPK/BPKP** — Mekanisme audit negara, verifikasi compliance, dan public accountability
-- **Peraturan Pemerintah Daerah** — Kebijakan governance khusus per provinsi/kota untuk PDAM regional
+- **Peraturan Pemerintah Daerah** — Kebijakan governance khusus per provinsi/kota untuk utilitas air regional
 - **BSSN Guidelines** — Standar keamanan infrastruktur kritis untuk sektor air
 - **Audit Internal & Risk Management** — Akuntabilitas board terhadap efektivitas governance
 
@@ -53,7 +53,7 @@ Tata kelola IT yang efektif mencakup empat komponen yang saling terhubung:
 
 ### Why GRC Matters
 
-**Untuk Pemimpin PDAM:** GRC bukan compliance checkbox—ini adalah strategic enabler yang mengurangi operational risk, meningkatkan stakeholder confidence, dan memfasilitasi growth
+**Untuk Pemimpin utilitas air:** GRC bukan compliance checkbox—ini adalah strategic enabler yang mengurangi operational risk, meningkatkan stakeholder confidence, dan memfasilitasi growth
 
 **Untuk Manajer IT:** Framework yang jelas berarti decision-making lebih cepat, accountability lebih transparan, dan career development lebih terukur
 

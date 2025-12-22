@@ -6,9 +6,9 @@ date: 2025-12-12
 
 ## Framework Tata Kelola IT (GRC) untuk Utilitas Air
 
-Saya mengembangkan framework ini setelah membantu puluhan PDAM setup atau improve governance structure mereka. Yang saya pelajari adalah: governance bukan "one-size-fits-all". PDAM besar membutuhkan struktur formal dengan council meetings; PDAM kecil bisa dengan approach lebih lean. Yang penting adalah clarity tentang roles, accountability, dan decision-making—regardless dari formality level.
+Saya mengembangkan framework ini setelah membantu puluhan utilitas air setup atau improve governance structure mereka. Yang saya pelajari adalah: governance bukan "one-size-fits-all". utilitas air besar membutuhkan struktur formal dengan council meetings; utilitas air kecil bisa dengan approach lebih lean. Yang penting adalah clarity tentang roles, accountability, dan decision-making—regardless dari formality level.
 
-Framework GRC (Governance, Risk & Compliance) yang kuat adalah fondasi untuk operasi IT yang reliable, efficient, dan compliant. Panduan ini provides practical framework yang dapat diadopt atau disesuaikan oleh PDAM dalam developing IT governance structure mereka—sesuai dengan ukuran, kompleksitas, dan maturity level organisasi.
+Framework GRC (Governance, Risk & Compliance) yang kuat adalah fondasi untuk operasi IT yang reliable, efficient, dan compliant. Panduan ini provides practical framework yang dapat diadopt atau disesuaikan oleh utilitas air dalam developing IT governance structure mereka—sesuai dengan ukuran, kompleksitas, dan maturity level organisasi.
 
 ### Framework Structure Overview
 
@@ -223,4 +223,4 @@ Essential policies untuk IT governance:
 
 ---
 
-*Framework ini provide starting point; setiap PDAM should customize based pada size, maturity, regulatory requirement, dan specific risk profile. Consider engaging external advisor untuk first-time implementation.*
+*Framework ini provide starting point; setiap utilitas air should customize based pada size, maturity, regulatory requirement, dan specific risk profile. Consider engaging external advisor untuk first-time implementation.*

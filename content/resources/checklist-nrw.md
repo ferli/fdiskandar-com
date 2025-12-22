@@ -8,7 +8,7 @@ date: 2025-12-11
 
 Saya membuat checklist ini berdasarkan puluhan NRW reduction program yang saya dampingi. Checklist ini membantu menstruktur perjalanan dari "we have a big NRW problem" menjadi "here's systematic plan untuk fix it."
 
-Checklist ini dirancang untuk membantu PDAM dalam conducting assessment NRW dan merencanakan reduction program secara sistematis. Gunakan untuk identify gap, prioritize action, dan track progress implementasi. Setiap bagian memiliki detailed checklist dan "target state" untuk guidance—gunakan sesuai dengan konteks organisasi Anda, dan involve external expert ketika dibutuhkan untuk technical assessment.
+Checklist ini dirancang untuk membantu utilitas air dalam conducting assessment NRW dan merencanakan reduction program secara sistematis. Gunakan untuk identify gap, prioritize action, dan track progress implementasi. Setiap bagian memiliki detailed checklist dan "target state" untuk guidance—gunakan sesuai dengan konteks organisasi Anda, dan involve external expert ketika dibutuhkan untuk technical assessment.
 
 ---
 
@@ -31,7 +31,7 @@ Checklist ini dirancang untuk membantu PDAM dalam conducting assessment NRW dan 
 - Confidence tentang baseline number
 
 **Tools:**
-- Water balance spreadsheet (dari water utilities association atau PDAM peer)
+- Water balance spreadsheet (dari water utilities association atau utilitas air peer)
 - Production meter calibration certificate
 - Billing system data extract
 
@@ -280,7 +280,7 @@ Checklist ini dirancang untuk membantu PDAM dalam conducting assessment NRW dan 
 - [ ] Establish monitoring KPI (NRW reported monthly, tracked yearly)
 - [ ] Budget untuk maintenance (keep system running, replacement as needed)
 - [ ] Plan for next phase (once first target achieved, define next improvement)
-- [ ] Share learning (with peer PDAM, industry, regulator)
+- [ ] Share learning (with peer utilitas air, industry, regulator)
 
 **Target state:**
 - NRW reduction sustained at lower level

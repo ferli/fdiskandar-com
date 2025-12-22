@@ -15,7 +15,7 @@ Perjalanan profesional saya menggabungkan keahlian teknis mendalam (dari desain 
 
 **Transformasi Sistem Enterprise**
 
-Saya telah memimpin implementasi Enterprise Resource Planning (ERP) untuk berbagai organisasi dan skala, dari PDAM regional hingga perusahaan multinasional. Pengalaman ini mengajarkan saya bahwa transformasi sistem bukan hanya tentang teknologi, tapi tentang redesign proses bisnis dan manajemen perubahan. Saya telah membantu organisasi mengintegrasikan data dari sistem legacy yang kompleks ke platform modern, sambil memastikan business continuity dan adopsi pengguna yang smooth.
+Saya telah memimpin implementasi Enterprise Resource Planning (ERP) untuk berbagai organisasi dan skala, dari utilitas air regional hingga perusahaan multinasional. Pengalaman ini mengajarkan saya bahwa transformasi sistem bukan hanya tentang teknologi, tapi tentang redesign proses bisnis dan manajemen perubahan. Saya telah membantu organisasi mengintegrasikan data dari sistem legacy yang kompleks ke platform modern, sambil memastikan business continuity dan adopsi pengguna yang smooth.
 
 **Tata Kelola & Manajemen Risiko**
 
@@ -31,7 +31,7 @@ Infrastruktur adalah tulang punggung operasi. Saya telah mendesain dan mengoptim
 
 **Spesialisasi Industri Air**
 
-Pengalaman terdalam saya adalah di industri air. Saya telah membantu PDAM dengan berbagai tantangan: dari implementasi dashboard SCADA real-time untuk visibilitas operasional, hingga strategi pengurangan air hilang (NRW reduction) yang menghasilkan penghematan signifikan. Saya juga paham challenge unik industri ini — kombinasi asset yang tersebar, sistem teknis yang kompleks, dan regulasi yang ketat. Yang membuat saya berbeda adalah pengalaman ini bukan hanya teori, tapi dari project-project nyata.
+Pengalaman terdalam saya adalah di industri air. Saya telah membantu utilitas air dengan berbagai tantangan: dari implementasi dashboard SCADA real-time untuk visibilitas operasional, hingga strategi pengurangan air hilang (NRW reduction) yang menghasilkan penghematan signifikan. Saya juga paham challenge unik industri ini — kombinasi asset yang tersebar, sistem teknis yang kompleks, dan regulasi yang ketat. Yang membuat saya berbeda adalah pengalaman ini bukan hanya teori, tapi dari project-project nyata.
 
 ---
 
@@ -63,7 +63,7 @@ Industri air Indonesia sedang bertransformasi. Jika kita hanya menyimpan pengeta
 
 **Publikasi & Thought Leadership**
 
-Saya menulis dan berbicara secara aktif tentang transformasi digital, governance, dan operational excellence. Platform seperti Medium, conference talks, dan publikasi membantu saya menyebarkan pembelajaran. Fokusnya adalah edukasi industri, bukan personal branding. Saya ingin setiap pemimpin PDAM memahami apa yang possible dan apa yang realistis dalam konteks mereka.
+Saya menulis dan berbicara secara aktif tentang transformasi digital, governance, dan operational excellence. Platform seperti Medium, conference talks, dan publikasi membantu saya menyebarkan pembelajaran. Fokusnya adalah edukasi industri, bukan personal branding. Saya ingin setiap pemimpin utilitas air memahami apa yang possible dan apa yang realistis dalam konteks mereka.
 
 **Dokumentasi Lessons Learned**
 
@@ -75,7 +75,7 @@ Saya dengan senang hati berbagi pengalaman dengan profesional muda di industri a
 
 **Solusi yang Practical & Sustainable**
 
-Saya fokus pada solusi yang sustainable dan scalable — yang bisa diadopsi oleh PDAM besar maupun kecil, dengan berbagai level kapabilitas. Tidak ada gunanya membawa solusi canggih yang hanya bisa dijalankan oleh PDAM dengan resources unlimited. Solusi terbaik adalah yang bisa diimplementasikan dan dijaga oleh tim yang ada.
+Saya fokus pada solusi yang sustainable dan scalable — yang bisa diadopsi oleh utilitas air besar maupun kecil, dengan berbagai level kapabilitas. Tidak ada gunanya membawa solusi canggih yang hanya bisa dijalankan oleh utilitas air dengan resources unlimited. Solusi terbaik adalah yang bisa diimplementasikan dan dijaga oleh tim yang ada.
 
 ---
 
@@ -84,7 +84,7 @@ Saya fokus pada solusi yang sustainable dan scalable — yang bisa diadopsi oleh
 Industri air Indonesia memiliki potensi besar, dan saya percaya dengan sungguh-sungguh bahwa berkembang melalui:
 
 - **Transformasi digital yang bertanggung jawab** — teknologi bukan tujuan akhir, tapi enabler untuk mencapai misi
-- **Tata kelola yang transparan** — semua stakeholder (pemerintah, PDAM, karyawan, pelanggan) berhak paham apa yang terjadi dan kenapa
+- **Tata kelola yang transparan** — semua stakeholder (pemerintah, utilitas air, karyawan, pelanggan) berhak paham apa yang terjadi dan kenapa
 - **Operasi yang efisien** — setiap rupiah investasi harus memberikan value maksimal untuk pelayanan air yang lebih baik
 - **Keberlanjutan jangka panjang** — solusi yang hari ini kita bangun harus bisa dipertahankan dan bahkan ditingkatkan oleh generasi muda
 

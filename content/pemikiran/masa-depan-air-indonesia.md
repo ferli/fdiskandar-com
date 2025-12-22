@@ -22,7 +22,7 @@ Indonesia adalah water-rich country secara absolute (total renewable water resou
 
 **Root cause:** Bukan scarcity resource—tetapi distribution, infrastructure, investment, dan management yang lemah.
 
-Setiap PDAM yang mengalami water shortage di dry season, sebenarnya reflect management inefficiency, bukan absolute scarcity. Source water cukup; yang kurang adalah proper treatment, distribution infrastructure, dan loss control (NRW).
+Setiap utilitas air yang mengalami water shortage di dry season, sebenarnya reflect management inefficiency, bukan absolute scarcity. Source water cukup; yang kurang adalah proper treatment, distribution infrastructure, dan loss control (NRW).
 
 ### Mega-trends yang akan Shape Masa Depan
 
@@ -33,9 +33,9 @@ Indonesia akan terus urbanize. By 2030, estimated 65% dari population akan urban
 - Huge infrastructure expansion need
 - Climate variability impact semakin extreme (urban heat island effect, altered rainfall pattern)
 
-**Implication untuk PDAM:** Urbanization create opportunity (concentrated customer base, economy of scale) tetapi also challenge (massive capex need, managing peak demand, seasonal variation).
+**Implication untuk utilitas air:** Urbanization create opportunity (concentrated customer base, economy of scale) tetapi also challenge (massive capex need, managing peak demand, seasonal variation).
 
-**Strategic question:** Apakah PDAM siap untuk scale operasi 3-5x untuk accommodate urban growth?
+**Strategic question:** Apakah utilitas air siap untuk scale operasi 3-5x untuk accommodate urban growth?
 
 #### 2. Climate Change & Water Variability
 
@@ -44,15 +44,15 @@ Climate change membuat water availability semakin unpredictable:
 - Wet season semakin extreme (higher intensity, flood risk)
 - Seasonal rainfall pattern shifting (traditional monsoon pattern less reliable)
 
-**Implication:** PDAM perlu diversify source (multiple source, multiple treatment), build buffer capacity (reservoirs), dan optimize usage (demand management).
+**Implication:** utilitas air perlu diversify source (multiple source, multiple treatment), build buffer capacity (reservoirs), dan optimize usage (demand management).
 
 **Strategic question:** Apakah current water source strategy sufficient untuk 20 tahun ke depan? Atau perlu significant diversification (alternative source, reclaimed water, desalination)?
 
 #### 3. Digital Transformation as Imperative
 
-Digital transformation bukan optional for future-ready PDAM. Systems semakin complex (more customer, more data, more regulation), dan manual approach tidak scalable.
+Digital transformation bukan optional for future-ready utilitas air. Systems semakin complex (more customer, more data, more regulation), dan manual approach tidak scalable.
 
-PDAM yang tidak digitalize akan:
+utilitas air yang tidak digitalize akan:
 - Fall behind dalam operational efficiency
 - Unable to leverage data untuk smart decision-making
 - Struggle untuk attract & retain talent (young people expect digital-first environment)
@@ -69,7 +69,7 @@ Regulation semakin ketat pada water quality, environmental protection, data priv
 
 #### 5. Financial Sustainability Imperative
 
-Government subsidy tidak sustainable indefinitely. PDAM harus move toward cost recovery melalui improved efficiency dan better tariff structure.
+Government subsidy tidak sustainable indefinitely. utilitas air harus move toward cost recovery melalui improved efficiency dan better tariff structure.
 
 **Political reality:** Tariff increase politically difficult di many areas. Solution tidak hanya tariff naik—tapi comprehensive efficiency improvement (reduce cost, increase revenue collection, reduce waste).
 
@@ -82,21 +82,21 @@ Government subsidy tidak sustainable indefinitely. PDAM harus move toward cost r
 - Technology adoption selective (only essential)
 - Fragmentation continue (no consolidation atau strategic collaboration)
 - Outcome: Adequate water supply untuk most urban area, tapi rural coverage stagnant; inefficiency persist; quality variable
-- PDAM health: Mixed—some strong survivor, many weak dependent on subsidy
+- utilitas air health: Mixed—some strong survivor, many weak dependent on subsidy
 
 #### Scenario 2: "Consolidation & Professionalization"
-- Significant consolidation (regional PDAM merge)
+- Significant consolidation (regional utilitas air merge)
 - Professional management practices adopted broadly
 - Technology investment substantial (digital-first operation)
 - Outcome: Better coverage, higher efficiency, improved service quality; strong competitive market untuk private operator
-- PDAM health: Winners & loser; successful PDAM thrive; unsuccessful merge/close
+- utilitas air health: Winners & loser; successful utilitas air thrive; unsuccessful merge/close
 
 #### Scenario 3: "Quantum Leap Transformation"
 - Breakthrough technology adoption (full digital, AI-driven operation)
-- Ecosystem collaboration (PDAM, technology provider, regulator, community work together)
+- Ecosystem collaboration (utilitas air, technology provider, regulator, community work together)
 - Bold vision & decisive action (accept short-term cost untuk long-term gain)
 - Outcome: Universal access achieved; efficiency comparable dengan developed country; innovation leadership
-- PDAM health: Transformed organization dengan sustainable business model
+- utilitas air health: Transformed organization dengan sustainable business model
 
 ### Which Scenario is Most Likely?
 
@@ -106,7 +106,7 @@ Alasan:
 - Organizational inertia powerful (difficult to change way of doing)
 - Political constraint real (tariff increase resistance, government budget limit)
 - Coordination challenge significant (too many stakeholder, fragmented authority)
-- Talent constraint (difficulty attract & retain best people dalam PDAM sector)
+- Talent constraint (difficulty attract & retain best people dalam utilitas air sector)
 
 **Tapi outcome ini tidak inevitable.** History shows bahwa organizations & industries CAN transform jika:
 - Leadership committed untuk change
@@ -116,7 +116,7 @@ Alasan:
 
 ### What We Need to Do
 
-#### For PDAM Leadership
+#### For utilitas air Leadership
 
 1. **Honest assessment:** Understand where you are—capacity, challenge, opportunity
 2. **Bold vision:** Define 10-year vision yang meaningful (beyond just "improve efficiency")
@@ -129,18 +129,18 @@ Alasan:
 1. **Long-term commitment:** Provide stable policy & regulatory environment untuk allow strategic planning (not changing regulation every year)
 2. **Selective subsidy:** Maintain subsidy untuk affordability (social objective), tapi tie subsidy to efficiency improvement (incentive untuk better management)
 3. **Consolidation enablement:** Facilitate regional consolidation jika beneficial; don't force if not ready
-4. **Professional standard:** Enforce governance & professional management standard across PDAM
+4. **Professional standard:** Enforce governance & professional management standard across utilitas air
 
 #### For Technology Vendor & Consultant
 
-1. **Humble partnership:** Understand bahwa vendor is servant to PDAM vision, not driver of vision
-2. **Sustainability focus:** Recommend solution yang sustainable untuk PDAM size & context—not always the fanciest technology
-3. **Knowledge transfer:** Build capability dalam-PDAM, not dependency to vendor
+1. **Humble partnership:** Understand bahwa vendor is servant to utilitas air vision, not driver of vision
+2. **Sustainability focus:** Recommend solution yang sustainable untuk utilitas air size & context—not always the fanciest technology
+3. **Knowledge transfer:** Build capability dalam-utilitas air, not dependency to vendor
 4. **Industry contribution:** Contribute to industry knowledge base & collective learning
 
 #### For Civil Society & Customer Advocates
 
-1. **Constructive partnership:** Work WITH PDAM toward improvement, not AGAINST
+1. **Constructive partnership:** Work WITH utilitas air toward improvement, not AGAINST
 2. **Realistic expectation:** Water service improvement require time & investment; overnight solution tidak ada
 3. **Accountability push:** Demand transparency & accountability; support management yang deliver results
 4. **Knowledge demand:** Push for informed public discourse (based on data & evidence, not assumption)

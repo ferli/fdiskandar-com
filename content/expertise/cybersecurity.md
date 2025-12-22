@@ -5,7 +5,7 @@ description: "Strategi keamanan siber untuk infrastruktur kritis utilitas air"
 
 ## Keamanan Siber untuk Utilitas Air
 
-Cybersecurity bukan area yang saya hindar atau anggap "IT problem saja." Dalam pengalaman saya, organisasi water utility yang paling resilient adalah yang melihat cybersecurity sebagai business imperative, bukan IT overhead. Saya telah membantu PDAM mengembangkan security posture dari "not even in the game" menjadi "competitive advantage."
+Cybersecurity bukan area yang saya hindar atau anggap "IT problem saja." Dalam pengalaman saya, organisasi water utility yang paling resilient adalah yang melihat cybersecurity sebagai business imperative, bukan IT overhead. Saya telah membantu utilitas air mengembangkan security posture dari "not even in the game" menjadi "competitive advantage."
 
 Utilitas air adalah critical infrastructure dengan tanggung jawab langsung terhadap kesehatan publik, keamanan, dan sustainability layanan. Keamanan siber bukan pilihan atau compliance checkbox—ini adalah fundamental requirement untuk menjaga operational integrity dan public trust. Risk dari cyber attack—baik dari disruption maupun data breach—semakin real setiap tahun.
 
@@ -14,10 +14,10 @@ Utilitas air adalah critical infrastructure dengan tanggung jawab langsung terha
 Utilitas air menghadapi cybersecurity challenges yang kompleks dan unik dibanding industri lain:
 
 - **Operational Technology (OT)** — SCADA systems, PLCs, RTUs, sensor networks yang critical untuk water production, treatment, dan distribution. Disruption pada systems ini langsung impact public health
-- **Infrastruktur Legacy** — Banyak PDAM masih operate sistem 10-20 tahun yang tidak design dengan security baseline modern; sulit patch atau upgrade tanpa operational disruption
+- **Infrastruktur Legacy** — Banyak utilitas air masih operate sistem 10-20 tahun yang tidak design dengan security baseline modern; sulit patch atau upgrade tanpa operational disruption
 - **Expanding Digital Attack Surface** — Modernisasi system (cloud migration, digitalization, IoT sensors) membuka opportunities baru untuk attackers jika security tidak proper
 - **Regulatory & Compliance Mandates** — BSSN, UU PDP, critical infrastructure protection regulations semakin ketat; non-compliance carry significant penalties
-- **Limited Security Expertise** — Banyak PDAM tidak memiliki in-house cybersecurity expertise; outsourcing ke vendors dengan variable quality
+- **Limited Security Expertise** — Banyak utilitas air tidak memiliki in-house cybersecurity expertise; outsourcing ke vendors dengan variable quality
 
 ### Vektor Serangan & Threat Landscape
 
@@ -91,7 +91,7 @@ Phased approach untuk sustainable security improvement—tidak bisa semua sekali
 
 ### Why Cybersecurity Matters
 
-**Untuk Pemimpin PDAM:** Strong cybersecurity adalah risk mitigation strategy—operational disruption dari cyber attack bisa cost millions dalam direct losses + reputational damage + regulatory penalties
+**Untuk Pemimpin utilitas air:** Strong cybersecurity adalah risk mitigation strategy—operational disruption dari cyber attack bisa cost millions dalam direct losses + reputational damage + regulatory penalties
 
 **Untuk Manajer IT:** Security-first mindset di architecture & operations reduce incident response burden; enable focus pada innovation bukan firefighting
 

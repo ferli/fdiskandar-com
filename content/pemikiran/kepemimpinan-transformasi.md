@@ -6,7 +6,7 @@ date: 2025-12-09
 
 ## Kepemimpinan di Era Transformasi: Refleksi 30 Tahun
 
-Saya telah spend 30 tahun helping organizations—mostly in water, finance, infrastructure sector—navigate transformation. Dari corporate PDAM besar, ke family-owned businesses, ke government agencies. Satu learning yang konsisten emerge: **organizational transformation is fundamentally about leadership**.
+Saya telah spend 30 tahun helping organizations—mostly in water, finance, infrastructure sector—navigate transformation. Dari corporate utilitas air besar, ke family-owned businesses, ke government agencies. Satu learning yang konsisten emerge: **organizational transformation is fundamentally about leadership**.
 
 Bukan tentang technology, bukan tentang process, bukan tentang methodology. Semua itu important—tetapi secondary. Transformasi hidup atau mati based pada quality of leadership.
 
@@ -23,7 +23,7 @@ Vision yang powerful answer tiga questions:
 
 Bad vision adalah "improve efficiency by 10%"—abstract, disconnected dari real value.
 
-Good vision adalah: "In 5 years, kita akan serve 2 juta customer dengan reliable water supply, predictable bill, dan response time <24 jam untuk customer issue. Ini enable growth untuk city, improve health untuk families, dan create sustainable business untuk PDAM."
+Good vision adalah: "In 5 years, kita akan serve 2 juta customer dengan reliable water supply, predictable bill, dan response time <24 jam untuk customer issue. Ini enable growth untuk city, improve health untuk families, dan create sustainable business untuk utilitas air."
 
 **Why matters:**
 - Improvement bukan abstract—it's connected to real human benefit

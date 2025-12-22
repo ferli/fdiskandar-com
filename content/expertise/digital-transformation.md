@@ -5,13 +5,13 @@ description: "Strategi dan panduan transformasi digital untuk utilitas air Indon
 
 ## Transformasi Digital untuk Utilitas Air
 
-Saya mulai bekerja di transformasi digital PDAM sejak era sistem berbasis mainframe. Saya melihat langsung organisasi yang berhasil vs yang gagal—dan setiap kali, keberhasilan bukan sekadar soal teknologi yang dipilih, tapi bagaimana organisasi mempersiapkan diri untuk perubahan.
+Saya mulai bekerja di transformasi digital utilitas air sejak era sistem berbasis mainframe. Saya melihat langsung organisasi yang berhasil vs yang gagal—dan setiap kali, keberhasilan bukan sekadar soal teknologi yang dipilih, tapi bagaimana organisasi mempersiapkan diri untuk perubahan.
 
 Transformasi digital bukan sekadar adopsi teknologi—ini adalah reimagining menyeluruh tentang bagaimana organisasi Anda beroperasi, melayani pelanggan, dan menciptakan nilai berkelanjutan di era digital. Pengalaman saya menunjukkan bahwa yang paling sering gagal adalah bukan teknologinya, tapi persiapan organisasi dan change management.
 
 ### Tantangan Umum Utilitas Air Indonesia
 
-Sebagian besar PDAM dan utilitas air di Indonesia menghadapi tantangan serupa dalam perjalanan digital:
+Sebagian besar utilitas air dan utilitas air di Indonesia menghadapi tantangan serupa dalam perjalanan digital:
 
 - **Sistem Legacy yang Terisolasi** — Mainframe atau aplikasi standalone yang tidak terintegrasi satu sama lain
 - **Data Tercecer** — Informasi pelanggan, operasional, dan keuangan tersebar di berbagai sistem tanpa satu sumber kebenaran
@@ -44,7 +44,7 @@ Komponen teknologi inti yang mendukung operasi efisien:
 
 ### Stakeholder Perspective
 
-**Untuk Pemimpin PDAM:** Transformasi digital adalah strategic imperative untuk survival dan growth—memungkinkan Anda compete di era digital sambil meningkatkan service delivery
+**Untuk Pemimpin utilitas air:** Transformasi digital adalah strategic imperative untuk survival dan growth—memungkinkan Anda compete di era digital sambil meningkatkan service delivery
 
 **Untuk Manajer Operasional:** Dengan sistem modern, tim Anda dapat fokus pada strategic work bukannya administrative overhead
 

@@ -5,9 +5,9 @@ description: "Framework, checklist, panduan, dan tools praktis untuk implementas
 
 ## Resources & Panduan Praktis
 
-Setelah bertahun-tahun membantu PDAM dengan transformasi, saya realize bahwa banyak pemimpin tahu apa yang seharusnya dilakukan—tapi tidak tahu bagaimana mulai. Resources di bagian ini dirancang untuk bridge gap itu: dari understanding theoretical ke practical implementation.
+Setelah bertahun-tahun membantu utilitas air dengan transformasi, saya realize bahwa banyak pemimpin tahu apa yang seharusnya dilakukan—tapi tidak tahu bagaimana mulai. Resources di bagian ini dirancang untuk bridge gap itu: dari understanding theoretical ke practical implementation.
 
-Di sini saya menyediakan framework, checklist, panduan step-by-step, dan tools praktis yang dapat digunakan langsung oleh PDAM dan organisasi air untuk accelerate transformasi digital, improve governance, dan optimize operasi. Semua resources ini based pada lessons learned dari puluhan project transformasi di berbagai utilitas air Indonesia—apa yang berhasil, apa yang gagal, dan kenapa.
+Di sini saya menyediakan framework, checklist, panduan step-by-step, dan tools praktis yang dapat digunakan langsung oleh utilitas air dan organisasi air untuk accelerate transformasi digital, improve governance, dan optimize operasi. Semua resources ini based pada lessons learned dari puluhan project transformasi di berbagai utilitas air Indonesia—apa yang berhasil, apa yang gagal, dan kenapa.
 
 ### Kategori Resources
 
@@ -40,14 +40,14 @@ Di sini saya menyediakan framework, checklist, panduan step-by-step, dan tools p
 
 ## Audience & Usage
 
-**Untuk Pemimpin PDAM:**
+**Untuk Pemimpin utilitas air:**
 Use resources untuk strategic planning, benchmark performance, identify gaps
 
 **Untuk Manajer Operasional & Tim IT:**
 Use resources untuk practical implementation, day-to-day decision making, team guidance
 
 **Untuk Vendor & Konsultan:**
-Use resources sebagai starting point; customize untuk specific PDAM context
+Use resources sebagai starting point; customize untuk specific utilitas air context
 
 **Untuk Regulator & Auditor:**
 Use resources untuk compliance verification, benchmark assessment
