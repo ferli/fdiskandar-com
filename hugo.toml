@@ -21,6 +21,10 @@ pagination.pagerSize = 10
   keywords = ["konsultan PDAM", "digitalisasi utilitas air", "NRW PDAM", "GRC water utility"]
   images = ["/images/og-image.png"]
 
+  # Force dark mode only - disable theme toggle
+  disableThemeToggle = true
+  defaultTheme = "dark"
+
   [params.homeInfoParams]
     Title = "Strategic Technologist for Water Utilities"
     Content = "Membantu organisasi air bertransformasi secara digital dengan governance yang kuat.\n\n**30+ tahun pengalaman** | **4 domain expertise** | **Publikasi & knowledge sharing**"
