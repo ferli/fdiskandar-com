@@ -15,10 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Set initial theme
+  const html = document.documentElement;
   if (savedTheme === 'light') {
-    document.documentElement.setAttribute('data-theme', 'light');
+    html.setAttribute('data-theme', 'light');
+    html.classList.add('light-theme');
   } else {
-    document.documentElement.removeAttribute('data-theme');
+    html.removeAttribute('data-theme');
+    html.classList.remove('light-theme');
   }
 
   // Hook into theme toggle button
@@ -27,20 +30,29 @@ document.addEventListener('DOMContentLoaded', function() {
     themeToggleBtn.addEventListener('click', function(e) {
       e.preventDefault();
 
-      // Get current theme
-      const currentTheme = document.documentElement.getAttribute('data-theme');
+      // Get current theme from both sources to be safe
+      const currentTheme = html.getAttribute('data-theme');
       const isLightMode = currentTheme === 'light';
       const nextTheme = isLightMode ? 'dark' : 'light';
 
-      // Apply new theme
+      console.log('Toggle clicked. Current:', currentTheme, 'IsLight:', isLightMode, 'Next:', nextTheme);
+
+      // Apply new theme to both attribute and class
       if (nextTheme === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
+        html.setAttribute('data-theme', 'light');
+        html.classList.add('light-theme');
       } else {
-        document.documentElement.removeAttribute('data-theme');
+        html.removeAttribute('data-theme');
+        html.classList.remove('light-theme');
       }
+
+      // Force style recalculation
+      void html.offsetHeight;
 
       // Save preference
       localStorage.setItem('pref-theme', nextTheme);
+
+      console.log('Theme changed to:', nextTheme);
 
       // Visual feedback - add brief pulse to button
       themeToggleBtn.style.opacity = '0.7';

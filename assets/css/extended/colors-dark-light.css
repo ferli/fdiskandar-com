@@ -29,7 +29,8 @@
 }
 
 /* === LIGHT MODE: Sophisticated Cream & Sage === */
-html[data-theme="light"] {
+html[data-theme="light"],
+html.light-theme {
   /* Light Mode - Sophisticated cream with sage/teal accents */
   --theme: #f8faf9;
   --entry: #f0f3f1;
@@ -119,47 +120,56 @@ h1, h2, h3, h4, h5, h6 {
 
 /* === Light Mode Specific Enhancements === */
 
-html[data-theme="light"] .post-entry {
+html[data-theme="light"] .post-entry,
+html.light-theme .post-entry {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(240, 243, 241, 0.7));
   backdrop-filter: blur(8px);
   border: 1px solid var(--border);
 }
 
-html[data-theme="light"] .post-entry:hover {
+html[data-theme="light"] .post-entry:hover,
+html.light-theme .post-entry:hover {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 243, 241, 0.9));
   box-shadow: 0 8px 24px rgba(0, 102, 204, 0.12);
 }
 
 html[data-theme="light"] .header,
-html[data-theme="light"] .nav {
+html[data-theme="light"] .nav,
+html.light-theme .header,
+html.light-theme .nav {
   background: rgba(248, 250, 249, 0.95);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
 
-html[data-theme="light"] blockquote {
+html[data-theme="light"] blockquote,
+html.light-theme blockquote {
   background: linear-gradient(90deg, rgba(0, 102, 204, 0.08), transparent);
   border-left-color: #0066cc;
   color: var(--secondary);
 }
 
-html[data-theme="light"] table {
+html[data-theme="light"] table,
+html.light-theme table {
   background: rgba(248, 250, 249, 0.8);
   border: 1px solid var(--border);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-html[data-theme="light"] thead {
+html[data-theme="light"] thead,
+html.light-theme thead {
   background: linear-gradient(90deg, rgba(0, 102, 204, 0.08), rgba(0, 102, 204, 0.04));
   border-bottom: 2px solid #0066cc;
 }
 
-html[data-theme="light"] th {
+html[data-theme="light"] th,
+html.light-theme th {
   color: #0052a3;
   font-weight: 700;
 }
 
-html[data-theme="light"] tbody tr:hover {
+html[data-theme="light"] tbody tr:hover,
+html.light-theme tbody tr:hover {
   background: rgba(0, 102, 204, 0.06);
 }
 
