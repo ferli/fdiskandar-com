@@ -1,11 +1,13 @@
-/* Color Scheme Activation */
-/* Uncomment your preferred color scheme below */
+/* Color Scheme Activation - All Schemes Loaded for Toggle */
+/* Theme can be switched dynamically via theme toggle button */
 
-/* Option 1: Deep Midnight Blue (Primary: #001a4d, Accent: #0052cc) */
-@import "colors-option1.css";
+/* Import all color schemes with toggle support */
+@import "colors-all.css";
 
-/* Option 2: Rich Navy Blue (Primary: #0a3d62, Accent: #1e88e5) */
-/* @import "colors-option2.css"; */
+/* Color Scheme Information:
+   - Default (no data-theme): Deep Midnight Blue (#001a4d)
+   - data-theme="option2": Rich Navy Blue (#0a3d62)
+   - data-theme="option3": Ocean Depths Blue (#0d1b2a)
 
-/* Option 3: Ocean Depths Blue (Primary: #0d1b2a, Accent: #2a9d8f) */
-/* @import "colors-option3.css"; */
+   Theme toggle via JavaScript sets html[data-theme] attribute
+*/

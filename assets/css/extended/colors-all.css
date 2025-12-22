@@ -1,0 +1,148 @@
+/* All Three Ocean Blue Color Schemes with Toggle Support */
+
+/* === DEFAULT: Deep Midnight Blue (Option 1) === */
+:root {
+  /* Base ocean blue theme */
+  --theme: #001a4d;
+  --entry: #002366;
+  --primary: #e8f1f5;
+  --secondary: #a8c5da;
+  --tertiary: #1e4d7b;
+  --content: #d4e4f0;
+  --hljs-bg: #00132e;
+  --code-bg: #001a4d;
+  --border: #00356b;
+
+  /* Accent colors */
+  --accent-blue: #0052cc;
+  --accent-bright: #1e88e5;
+  --accent-glow: rgba(0, 82, 204, 0.3);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #001233 0%, #001a4d 100%);
+  --gradient-subtle: linear-gradient(180deg, #001a4d 0%, #002366 100%);
+
+  /* Animation timings */
+  --transition-fast: 0.2s;
+  --transition-normal: 0.3s;
+  --transition-slow: 0.5s;
+}
+
+/* === Option 2: Rich Navy Blue === */
+html[data-theme="option2"] {
+  --theme: #0a3d62;
+  --entry: #0d4f7d;
+  --primary: #e0ecf5;
+  --secondary: #a0c5dd;
+  --tertiary: #1a5f99;
+  --content: #d0e4f0;
+  --hljs-bg: #052340;
+  --code-bg: #0a3d62;
+  --border: #0d5a88;
+
+  --accent-blue: #1e88e5;
+  --accent-bright: #42a5f5;
+  --accent-glow: rgba(30, 136, 229, 0.3);
+
+  --gradient-primary: linear-gradient(135deg, #082a47 0%, #0a3d62 100%);
+  --gradient-subtle: linear-gradient(180deg, #0a3d62 0%, #0d4f7d 100%);
+}
+
+/* === Option 3: Ocean Depths Blue === */
+html[data-theme="option3"] {
+  --theme: #0d1b2a;
+  --entry: #0f2a3d;
+  --primary: #dceef5;
+  --secondary: #9bb5c9;
+  --tertiary: #1a4d63;
+  --content: #cce8f0;
+  --hljs-bg: #050f18;
+  --code-bg: #0d1b2a;
+  --border: #0f3a52;
+
+  --accent-blue: #2a9d8f;
+  --accent-bright: #4db8a8;
+  --accent-glow: rgba(42, 157, 143, 0.3);
+
+  --gradient-primary: linear-gradient(135deg, #020c1b 0%, #0d1b2a 100%);
+  --gradient-subtle: linear-gradient(180deg, #0d1b2a 0%, #0f2a3d 100%);
+}
+
+/* Force dark mode for all options */
+html {
+  color-scheme: dark only;
+}
+
+/* Override any light mode preferences */
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark only;
+  }
+}
+
+/* Ensure body and main elements use the theme */
+body {
+  background: var(--theme);
+  color: var(--primary);
+}
+
+.list {
+  background: var(--theme);
+}
+
+.toc {
+  background: var(--entry);
+}
+
+/* Code block styling */
+pre {
+  background: var(--hljs-bg) !important;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+code {
+  background: var(--code-bg);
+  color: var(--accent-bright);
+}
+
+/* Link styling */
+a {
+  color: var(--accent-blue);
+}
+
+a:visited {
+  color: var(--accent-blue);
+}
+
+/* Ensure contrast on various backgrounds */
+.post-content {
+  color: var(--content);
+}
+
+.post-meta {
+  color: var(--secondary);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+}
+
+/* Smooth transition when changing themes */
+html {
+  transition: background-color var(--transition-normal) ease,
+              color var(--transition-normal) ease;
+}
+
+body,
+.list,
+.toc,
+pre,
+code,
+a {
+  transition: background-color var(--transition-normal) ease,
+              color var(--transition-normal) ease,
+              border-color var(--transition-normal) ease,
+              box-shadow var(--transition-normal) ease;
+}

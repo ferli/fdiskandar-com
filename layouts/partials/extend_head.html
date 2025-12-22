@@ -1,6 +1,53 @@
-<!-- Scroll Animation Enhancement -->
+<!-- Scroll Animation Enhancement with Theme Toggle -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // === THEME TOGGLE LOGIC ===
+  // Get saved theme preference or default to option1 (Deep Midnight Blue)
+  const savedTheme = localStorage.getItem('pref-ocean-theme') || 'option1';
+
+  // Set initial theme
+  if (savedTheme !== 'option1') {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  }
+
+  // Hook into theme toggle button
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      // Get current theme
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'option1';
+      let nextTheme;
+
+      // Cycle through themes
+      if (currentTheme === 'option1' || !currentTheme) {
+        nextTheme = 'option2';
+      } else if (currentTheme === 'option2') {
+        nextTheme = 'option3';
+      } else {
+        nextTheme = 'option1';
+      }
+
+      // Apply new theme
+      if (nextTheme === 'option1') {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', nextTheme);
+      }
+
+      // Save preference
+      localStorage.setItem('pref-ocean-theme', nextTheme);
+
+      // Visual feedback - add brief pulse to button
+      themeToggleBtn.style.opacity = '0.7';
+      setTimeout(() => {
+        themeToggleBtn.style.opacity = '1';
+      }, 150);
+    });
+  }
+
+  // === SCROLL ANIMATION LOGIC ===
   // Intersection Observer for scroll-triggered animations
   const observerOptions = {
     threshold: 0.1,
