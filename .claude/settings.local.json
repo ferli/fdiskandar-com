@@ -11,7 +11,12 @@
       "Bash(wrangler pages project create:*)",
       "Bash(wrangler pages project list:*)",
       "Bash(wrangler pages project create-deployment-config:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(wrangler pages project delete:*)",
+      "Bash(hugo server:*)",
+      "Bash(cat:*)",
+      "Bash(git config:*)",
+      "Bash(git remote:*)"
     ]
   }
 }

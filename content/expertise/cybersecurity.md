@@ -5,7 +5,9 @@ description: "Strategi keamanan siber untuk infrastruktur kritis utilitas air"
 
 ## Keamanan Siber untuk Utilitas Air
 
-Utilitas air adalah critical infrastructure dengan tanggung jawab langsung terhadap kesehatan publik, keamanan, dan sustainability layanan. Keamanan siber bukan pilihan atau compliance checkbox—ini adalah fundamental requirement untuk menjaga operational integrity dan public trust.
+Cybersecurity bukan area yang saya hindar atau anggap "IT problem saja." Dalam pengalaman saya, organisasi water utility yang paling resilient adalah yang melihat cybersecurity sebagai business imperative, bukan IT overhead. Saya telah membantu PDAM mengembangkan security posture dari "not even in the game" menjadi "competitive advantage."
+
+Utilitas air adalah critical infrastructure dengan tanggung jawab langsung terhadap kesehatan publik, keamanan, dan sustainability layanan. Keamanan siber bukan pilihan atau compliance checkbox—ini adalah fundamental requirement untuk menjaga operational integrity dan public trust. Risk dari cyber attack—baik dari disruption maupun data breach—semakin real setiap tahun.
 
 ### Lanskap Risiko Unik Utilitas Air
 

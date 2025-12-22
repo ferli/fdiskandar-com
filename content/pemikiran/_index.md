@@ -3,11 +3,13 @@ title: "Pemikiran Strategis"
 description: "Essays dan perspektif strategis tentang masa depan industri utilitas air Indonesia"
 ---
 
-## Pemikiran Strategis: Perspektif Jangka Panjang
+## Pemikiran Strategis: Refleksi 30 Tahun
 
-Di bagian ini saya berbagi pemikiran strategis, perspektif jangka panjang, dan observasi mendalam tentang industri utilitas air Indonesia. Ini bukan hanya analisis teknis—ini adalah pemikiran tentang masa depan, peluang, tantangan, dan tanggung jawab kami sebagai pemimpin industri.
+Di bagian ini saya berbagi pemikiran strategis, perspektif jangka panjang, dan observasi mendalam tentang industri utilitas air Indonesia. Ini bukan analysis yang academic atau detached—ini adalah pemikiran yang born dari garis depan transformasi, conversations dengan puluhan pemimpin PDAM, dan pengalaman melangkah maju dan mundur dalam berbagai proyek.
 
-Essays di sini reflect pengalaman 30+ tahun dalam transformasi organisasi besar, dan conversations dengan puluhan pemimpin PDAM, regulator, dan stakeholder lainnya di ecosystem ini.
+Setelah 30 tahun membantu organisasi navigate perubahan besar, saya percaya bahwa yang paling penting adalah clarity tentang "why"—mengapa kita melakukan apa yang kita lakukan. Technology, process, methodology semuanya tools. Tapi purpose adalah yang drives sustainable transformation.
+
+Essays di sini reflect pengalaman bertahun-tahun, dan terus-menerus diupdate berdasarkan learning baru. Saya tidak menyajikan "definitive answer"—industri air Indonesia terlalu kompleks dan dynamic untuk itu. Saya menyajikan perspektif yang hopefully spark reflection dan conversation.
 
 ### Tema-tema Utama
 

@@ -5,9 +5,11 @@ description: "Strategi sistematis pengurangan air hilang (NRW) untuk utilitas ai
 
 ## Pengurangan Air Hilang (NRW) untuk Utilitas Air
 
+NRW adalah salah satu area yang paling membuat saya excited dalam bekerja dengan PDAM. Mengapa? Karena ini adalah domain di mana impact langsung bisa diukur—tidak abstract, tapi real: revenue meningkat, customers lebih puas, lingkungan lebih terlindungi. Saya telah membantu puluhan PDAM mencapai NRW reduction signifikan, dan setiap project memberikan learning yang berharga.
+
 Pengurangan Air Hilang (NRW — Non-Revenue Water) adalah air yang diproduksi namun tidak menghasilkan revenue karena dua sebab utama: kebocoran pada infrastruktur (physical loss) atau kehilangan komersial akibat kesalahan meter, koneksi ilegal, atau billing inefficiency (commercial loss).
 
-Untuk rata-rata PDAM Indonesia, NRW mencapai 30-40%—ini adalah peluang improvement signifikan yang juga berdampak langsung terhadap sustainability dan financial viability organisasi.
+Untuk rata-rata PDAM Indonesia, NRW mencapai 30-40%—ini adalah peluang improvement signifikan yang juga berdampak langsung terhadap sustainability dan financial viability organisasi. Dengan pendekatan yang tepat, pengurangan 5-10% NRW dalam 2-3 tahun adalah realistic dan achievable.
 
 ### Mengapa NRW Reduction Penting
 

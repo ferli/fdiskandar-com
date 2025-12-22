@@ -5,9 +5,11 @@ description: "30+ tahun membantu transformasi digital industri utilitas air Indo
 
 ## Teknolog Strategis untuk Industri Air Indonesia
 
-Lebih dari 30 tahun pengalaman di industri IT dan utilitas air Indonesia. Saya membantu seluruh ekosistem — dari direksi PDAM, manajer operasional, vendor teknologi, regulator, pemerintah, hingga konsumen air — untuk membangun sistem yang lebih baik, lebih transparan, dan berkelanjutan.
+Selama lebih dari 30 tahun, saya bekerja di industri IT dan infrastruktur air Indonesia. Yang saya pelajari adalah bahwa transformasi digital paling berhasil ketika dibangun atas fondasi governance yang kuat, operasi yang efisien, dan komitmen pada keberlanjutan.
 
-Fokus: **Transformasi digital yang bertanggung jawab. Governance yang kokoh. Operasi yang efisien.**
+Saya bekerja dengan berbagai stakeholder — dari direksi PDAM yang menghadapi tantangan transformasi digital, manajer operasional yang mencari efisiensi, tim IT yang berjuang dengan sistem legacy, vendor teknologi yang ingin memahami kebutuhan pasar, hingga regulator yang perlu memastikan akuntabilitas. Setiap perspektif unik, dan setiap memberikan pembelajaran berharga.
+
+**Fokus saya:** Membantu industri air Indonesia berkembang melalui transformasi digital yang bertanggung jawab, governance yang transparan, dan operasi yang optimal.
 
 ---
 
@@ -55,12 +57,14 @@ Proteksi infrastruktur kritis, SCADA security, perlindungan data pelanggan, inci
 
 ---
 
-## Yang Saya Tawarkan
+## Apa yang Saya Bagikan
 
-- **Insight strategis** — Analisis mendalam tentang tren dan tantangan industri air
-- **Framework praktis** — Template, checklist, dan panduan yang siap digunakan
-- **Kisah sukses** — Case studies dan pembelajaran dari transformasi nyata (dianonimkan)
-- **Edukasi berkelanjutan** — Artikel, panduan, dan resources untuk meningkatkan kapabilitas
+Melalui platform ini, saya berbagi:
+
+- **Insight strategis** — Analisis mendalam tentang tren dan tantangan industri air berdasarkan pengalaman saya membantu puluhan PDAM
+- **Framework praktis** — Template, checklist, dan panduan yang sudah terbukti dalam implementasi nyata
+- **Pembelajaran dari lapangan** — Case studies dan insights dari transformasi digital yang saya dampingi, apa yang berhasil dan apa yang tidak
+- **Edukasi berkelanjutan** — Artikel, panduan, dan resources yang dirancang untuk membantu Anda dan tim meningkatkan kapabilitas
 
 ---
 

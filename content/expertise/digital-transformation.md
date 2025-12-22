@@ -5,7 +5,9 @@ description: "Strategi dan panduan transformasi digital untuk utilitas air Indon
 
 ## Transformasi Digital untuk Utilitas Air
 
-Transformasi digital bukan sekadar adopsi teknologi—ini adalah reimagining menyeluruh tentang bagaimana organisasi Anda beroperasi, melayani pelanggan, dan menciptakan nilai berkelanjutan di era digital.
+Saya mulai bekerja di transformasi digital PDAM sejak era sistem berbasis mainframe. Saya melihat langsung organisasi yang berhasil vs yang gagal—dan setiap kali, keberhasilan bukan sekadar soal teknologi yang dipilih, tapi bagaimana organisasi mempersiapkan diri untuk perubahan.
+
+Transformasi digital bukan sekadar adopsi teknologi—ini adalah reimagining menyeluruh tentang bagaimana organisasi Anda beroperasi, melayani pelanggan, dan menciptakan nilai berkelanjutan di era digital. Pengalaman saya menunjukkan bahwa yang paling sering gagal adalah bukan teknologinya, tapi persiapan organisasi dan change management.
 
 ### Tantangan Umum Utilitas Air Indonesia
 

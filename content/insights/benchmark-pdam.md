@@ -6,7 +6,9 @@ date: 2025-12-15
 
 ## Benchmark Kinerja PDAM: Analisis Komparatif
 
-Berapa kinerja PDAM Anda dibanding peers? Bagaimana tren industri berkembang? Analisis benchmark ini membandingkan PDAM berdasarkan metrik operasional dan finansial kunci untuk memberikan context tentang posisi kompetitif dan peluang improvement.
+Dalam beberapa tahun terakhir, saya telah mengakses data operasional dari puluhan PDAM—dari yang terbesar hingga yang paling kecil. Satu insight yang consistent: mayoritas pemimpin PDAM tidak tahu bagaimana performa mereka dibanding peers. Mereka bekerja dengan data internal saja, tanpa konteks industri. Ini membuat sulit untuk set target yang realistis, atau identify peluang improvement yang signifikan.
+
+Analisis benchmark ini membandingkan PDAM berdasarkan metrik operasional dan finansial kunci untuk memberikan context tentang posisi kompetitif dan peluang improvement Anda. Data ini bukan secret—tapi sering tersebar di berbagai laporan tidak terkoneksi. Saya compile dan analyze ini untuk memberikan holistic picture dari industri.
 
 ### Metrik Kinerja Kunci (KPI)
 

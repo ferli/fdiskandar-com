@@ -5,7 +5,9 @@ description: "Analisis mendalam tentang tren, tantangan, dan peluang industri ut
 
 ## Analisis & Wawasan Industri Air
 
-Industri utilitas air Indonesia sedang mengalami transformasi signifikan. Di bagian ini saya membagikan analisis mendalam tentang tren industri, benchmark performance, landscape regulasi, dan peluang strategis yang relevan untuk stakeholders air.
+Industri utilitas air Indonesia sedang mengalami transformasi signifikan—dan saya melihat perubahan ini terjadi di garis depan, working dengan puluhan PDAM di berbagai ukuran dan maturity level. Data-driven insights di bagian ini adalah hasil dari pengamatan ini, dikombinasikan dengan research dan conversation dengan peers di industri.
+
+Saya membagikan analisis mendalam tentang tren industri, benchmark performance, landscape regulasi, dan peluang strategis. Fokus saya adalah membuat insights ini actionable—bukan hanya menarik untuk dibaca, tapi bisa directly inform strategic decisions di organisasi Anda.
 
 ### Target Pembaca
 

@@ -5,7 +5,9 @@ description: "Framework GRC untuk utilitas air dan infrastruktur kritis"
 
 ## Tata Kelola, Risiko & Kepatuhan untuk Utilitas Air
 
-Tata kelola IT yang kuat adalah fondasi untuk operasi yang andal, efisien, dan compliant terhadap regulasi. Sebagai organisasi critical infrastructure yang melayani kebutuhan dasar masyarakat, utilitas air memiliki tanggung jawab khusus terhadap regulasi, stakeholders, dan transparansi operasional.
+Dalam karir saya, saya melihat ada dua tipe organisasi: yang mengview governance sebagai "birokrasi yang mengganggu" dan yang memahami governance sebagai "fondasi kesehatan organisasi." Organisasi di kategori kedua selalu beroperasi lebih baik, lebih efisien, dan lebih resilient terhadap krisis.
+
+Tata kelola IT yang kuat adalah fondasi untuk operasi yang andal, efisien, dan compliant terhadap regulasi. Sebagai organisasi critical infrastructure yang melayani kebutuhan dasar masyarakat, utilitas air memiliki tanggung jawab khusus terhadap regulasi, stakeholders, dan transparansi operasional. GRC bukan optional—ini adalah keharusan untuk legitimate dan sustainable operations.
 
 ### Lanskap Regulasi Indonesia
 
