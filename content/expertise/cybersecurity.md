@@ -5,7 +5,7 @@ description: "Strategi keamanan siber untuk infrastruktur kritis utilitas air"
 
 ## Keamanan Siber untuk Utilitas Air
 
-Cybersecurity bukan area yang saya hindar atau anggap "IT problem saja." Dalam pengalaman saya, organisasi water utility yang paling resilient adalah yang melihat cybersecurity sebagai business imperative, bukan IT overhead. Saya telah membantu utilitas air mengembangkan security posture dari "not even in the game" menjadi "competitive advantage."
+Keamanan siber dalam sektor air adalah tanggung jawab bersama—bukan "IT problem" yang hanya diserahkan kepada departemen IT. Dalam observasi saya, organisasi water utility yang paling resilient adalah yang memahami cybersecurity sebagai business imperative: setiap lapisan organisasi—dari operator lapangan hingga direksi—memahami risiko dan peran mereka dalam membangun pertahanan. Kolaborasi antara tim operasional, IT, manajemen, dan bahkan petugas lapangan terbukti lebih efektif daripada hanya mengandalkan tools mahal atau consultant eksternal.
 
 Utilitas air adalah critical infrastructure dengan tanggung jawab langsung terhadap kesehatan publik, keamanan, dan sustainability layanan. Keamanan siber bukan pilihan atau compliance checkbox—ini adalah fundamental requirement untuk menjaga operational integrity dan public trust. Risk dari cyber attack—baik dari disruption maupun data breach—semakin real setiap tahun.
 
