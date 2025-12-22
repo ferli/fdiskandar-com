@@ -1,13 +1,13 @@
-/* Color Scheme Activation - All Schemes Loaded for Toggle */
+/* Color Scheme Activation - Dark & Light Modes */
 /* Theme can be switched dynamically via theme toggle button */
 
-/* Import all color schemes with toggle support */
-@import "colors-all.css";
+/* Import dark and light color schemes */
+@import "colors-dark-light.css";
 
-/* Color Scheme Information:
-   - Default (no data-theme): Deep Midnight Blue (#001a4d)
-   - data-theme="option2": Rich Navy Blue (#0a3d62)
-   - data-theme="option3": Ocean Depths Blue (#0d1b2a)
+/* Theme Information:
+   - Default (no data-theme): Dark Mode - Deep Ocean Blue (#001a4d)
+   - data-theme="light": Light Mode - Sophisticated Cream (#f8faf9)
 
    Theme toggle via JavaScript sets html[data-theme] attribute
+   Preference saved to localStorage as 'pref-theme'
 */

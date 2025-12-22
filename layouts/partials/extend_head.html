@@ -2,12 +2,23 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // === THEME TOGGLE LOGIC ===
-  // Get saved theme preference or default to option1 (Deep Midnight Blue)
-  const savedTheme = localStorage.getItem('pref-ocean-theme') || 'option1';
+  // Get saved theme preference or use system preference
+  let savedTheme = localStorage.getItem('pref-theme');
+
+  if (!savedTheme) {
+    // Check system preference
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      savedTheme = 'light';
+    } else {
+      savedTheme = 'dark'; // default to dark
+    }
+  }
 
   // Set initial theme
-  if (savedTheme !== 'option1') {
-    document.documentElement.setAttribute('data-theme', savedTheme);
+  if (savedTheme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
   }
 
   // Hook into theme toggle button
@@ -17,27 +28,19 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
 
       // Get current theme
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'option1';
-      let nextTheme;
-
-      // Cycle through themes
-      if (currentTheme === 'option1' || !currentTheme) {
-        nextTheme = 'option2';
-      } else if (currentTheme === 'option2') {
-        nextTheme = 'option3';
-      } else {
-        nextTheme = 'option1';
-      }
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const isDarkMode = !currentTheme || currentTheme !== 'light';
+      const nextTheme = isDarkMode ? 'light' : 'dark';
 
       // Apply new theme
-      if (nextTheme === 'option1') {
-        document.documentElement.removeAttribute('data-theme');
+      if (nextTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
       } else {
-        document.documentElement.setAttribute('data-theme', nextTheme);
+        document.documentElement.removeAttribute('data-theme');
       }
 
       // Save preference
-      localStorage.setItem('pref-ocean-theme', nextTheme);
+      localStorage.setItem('pref-theme', nextTheme);
 
       // Visual feedback - add brief pulse to button
       themeToggleBtn.style.opacity = '0.7';
