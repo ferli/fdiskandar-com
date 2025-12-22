@@ -1,8 +1,36 @@
 <!-- Scroll Animation Enhancement with Theme Toggle -->
+<!-- IMMEDIATE: Override PaperMod theme setting before DOM loads -->
+<script>
+(function() {
+  // Execute immediately, not waiting for DOMContentLoaded
+  // This overrides PaperMod's default theme setting
+  const html = document.documentElement;
+  let savedTheme = localStorage.getItem('pref-theme');
+
+  if (!savedTheme) {
+    // Check system preference
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      savedTheme = 'light';
+    } else {
+      savedTheme = 'dark';
+    }
+  }
+
+  // Set theme immediately (before page renders)
+  if (savedTheme === 'light') {
+    html.setAttribute('data-theme', 'light');
+    html.classList.add('light-theme');
+  } else {
+    html.removeAttribute('data-theme');
+    html.classList.remove('light-theme');
+  }
+})();
+</script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // === THEME TOGGLE LOGIC ===
-  // Get saved theme preference or use system preference
+  const html = document.documentElement;
   let savedTheme = localStorage.getItem('pref-theme');
 
   if (!savedTheme) {
@@ -14,8 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Set initial theme
-  const html = document.documentElement;
+  // Ensure theme is set correctly (in case it got overridden)
   if (savedTheme === 'light') {
     html.setAttribute('data-theme', 'light');
     html.classList.add('light-theme');
