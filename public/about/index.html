@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="id" dir="auto" data-theme="auto">
+<html lang="id" dir="auto" data-theme="dark">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Tentang FD Iskandar | FD Iskandar | Strategic Technologist</title>
+<title>Tentang FD Iskandar | FD Iskandar</title>
 <meta name="keywords" content="">
-<meta name="description" content="Profil profesional FD Iskandar — 30&#43; tahun di industri utilitas air Indonesia">
+<meta name="description" content="Perjalanan di sektor air Indonesia — dari pengembangan software hingga fokus pada utilitas air swasta">
 <meta name="author" content="FD Iskandar">
 <link rel="canonical" href="https://fdiskandar.com/about/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fd5566c526ae48aadabd950798a2dc3568536401560eae5caac3765a42a9e7b5.css" integrity="sha256-/VVmxSauSKravZUHmKLcNWhTZAFWDq5cqsN2WkKp57U=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.680a68261679651942df11764b0d706558a80532e1011737a8e10563783aed76.css" integrity="sha256-aApoJhZ5ZRlC3xF2Sw1wZVioBTLhARc3qOEFY3g67XY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://fdiskandar.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://fdiskandar.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://fdiskandar.com/favicon-32x32.png">
@@ -27,60 +27,180 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
 </noscript>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
+document.addEventListener('DOMContentLoaded', function() {
+  
 
-</script><meta property="og:url" content="https://fdiskandar.com/about/">
-  <meta property="og:site_name" content="FD Iskandar | Strategic Technologist">
+  
+  
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-visible');
+        
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  
+  document.querySelectorAll('.post-entry, article, .post-content > *').forEach(el => {
+    if (!el.classList.contains('fade-in')) {
+      el.classList.add('fade-in');
+    }
+    observer.observe(el);
+  });
+
+  
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+
+      
+      if (href !== '#' && href.length > 1) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+
+        if (target) {
+          
+          const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+
+          
+          window.history.pushState(null, null, href);
+        }
+      }
+    });
+  });
+
+  
+  function updateActiveHeading() {
+    const headings = document.querySelectorAll('h2[id], h3[id]');
+    const scrollPosition = window.scrollY + 100;
+
+    headings.forEach(heading => {
+      if (heading.offsetTop <= scrollPosition) {
+        
+        heading.classList.add('in-view');
+      } else {
+        heading.classList.remove('in-view');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveHeading, { passive: true });
+
+  
+  const pageHeader = document.querySelector('.page-header');
+  if (pageHeader) {
+    window.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      pageHeader.style.transform = 'translateY(' + scrolled * 0.5 + 'px)';
+    }, { passive: true });
+  }
+
+  
+  window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+  });
+
+  
+  const images = document.querySelectorAll('img');
+  images.forEach(img => {
+    if (!img.complete) {
+      img.addEventListener('load', function() {
+        this.classList.add('loaded');
+      });
+    } else {
+      img.classList.add('loaded');
+    }
+  });
+});
+
+
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.style.scrollBehavior = 'auto';
+}
+</script>
+
+
+<style>
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.in-view {
+  color: var(--accent-bright);
+}
+
+ 
+img {
+  display: block;
+}
+
+ 
+html {
+  scroll-padding-top: 80px;
+}
+
+ 
+.loading {
+  animation: skeleton-loading 1.5s infinite;
+  background: linear-gradient(90deg, var(--entry) 25%, var(--border) 50%, var(--entry) 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+ 
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+</style>
+<meta property="og:url" content="https://fdiskandar.com/about/">
+  <meta property="og:site_name" content="FD Iskandar">
   <meta property="og:title" content="Tentang FD Iskandar">
-  <meta property="og:description" content="Profil profesional FD Iskandar — 30&#43; tahun di industri utilitas air Indonesia">
+  <meta property="og:description" content="Perjalanan di sektor air Indonesia — dari pengembangan software hingga fokus pada utilitas air swasta">
   <meta property="og:locale" content="id">
   <meta property="og:type" content="article">
       <meta property="og:image" content="https://fdiskandar.com/images/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://fdiskandar.com/images/og-image.png">
 <meta name="twitter:title" content="Tentang FD Iskandar">
-<meta name="twitter:description" content="Profil profesional FD Iskandar — 30&#43; tahun di industri utilitas air Indonesia">
+<meta name="twitter:description" content="Perjalanan di sektor air Indonesia — dari pengembangan software hingga fokus pada utilitas air swasta">
 
 
 <script type="application/ld+json">
@@ -103,12 +223,12 @@
   "@type": "BlogPosting",
   "headline": "Tentang FD Iskandar",
   "name": "Tentang FD Iskandar",
-  "description": "Profil profesional FD Iskandar — 30+ tahun di industri utilitas air Indonesia",
+  "description": "Perjalanan di sektor air Indonesia — dari pengembangan software hingga fokus pada utilitas air swasta",
   "keywords": [
     
   ],
-  "articleBody": "Tentang Saya Saya memulai karir di era ketika teknologi IT masih baru bagi banyak organisasi Indonesia. Lebih dari 30 tahun kemudian, setelah membantu puluhan organisasi di sektor strategis — khususnya industri air, finansial, dan infrastruktur kritis — saya telah belajar satu pelajaran penting: teknologi hanyalah tools. Yang sejati adalah bagaimana organisasi memanfaatkannya untuk mencapai misi mereka dengan governance yang kuat dan operasi yang efisien.\nPerjalanan profesional saya menggabungkan keahlian teknis mendalam (dari desain sistem hingga implementasi) dengan pemahaman bisnis tentang transformasi digital, manajemen risiko, dan operasi berkelanjutan.\nLatar Belakang Profesional Transformasi Sistem Enterprise\nSaya telah memimpin implementasi Enterprise Resource Planning (ERP) untuk berbagai organisasi dan skala, dari PDAM regional hingga perusahaan multinasional. Pengalaman ini mengajarkan saya bahwa transformasi sistem bukan hanya tentang teknologi, tapi tentang redesign proses bisnis dan manajemen perubahan. Saya telah membantu organisasi mengintegrasikan data dari sistem legacy yang kompleks ke platform modern, sambil memastikan business continuity dan adopsi pengguna yang smooth.\nTata Kelola \u0026 Manajemen Risiko\nDalam bekerja dengan organisasi infrastruktur kritis, saya memahami pentingnya governance yang kuat. Saya telah mengembangkan framework tata kelola IT yang compliant dengan regulasi nasional dan internasional, dari ISO 27001 hingga standar industry-specific. Manajemen risiko bukan hanya checklist compliance bagi saya — ini tentang melindungi organisasi dan stakeholder mereka. Saya juga telah setup Program Management Office (PMO) dan melakukan vendor due diligence untuk memastikan kualitas dan reliability dalam setiap partnership teknologi.\nKepemimpinan Program \u0026 Proyek\nSaya telah memimpin program transformasi bernilai miliaran rupiah dengan kompleksitas tinggi. Manajemen tim 20+ engineer dan koordinasi lintas fungsi diperlukan untuk mencapai hasil. Metodologi seperti IBM RUP, PMI standards, dan COBIT framework menjadi tools saya, tapi filosofi tetap sama: hasil yang terukur, komunikasi yang jelas, dan accountability di setiap level.\nInfrastruktur Teknologi \u0026 Operasi\nInfrastruktur adalah tulang punggung operasi. Saya telah mendesain dan mengoptimalkan sistem monitoring terpusat, incident response frameworks, dan network architecture untuk memastikan reliability maksimal. Dalam konteks infrastruktur kritis seperti SCADA systems, keamanan dan reliability tidak bisa dikompromikan.\nSpesialisasi Industri Air\nPengalaman terdalam saya adalah di industri air. Saya telah membantu PDAM dengan berbagai tantangan: dari implementasi dashboard SCADA real-time untuk visibilitas operasional, hingga strategi pengurangan air hilang (NRW reduction) yang menghasilkan penghematan signifikan. Saya juga paham challenge unik industri ini — kombinasi asset yang tersebar, sistem teknis yang kompleks, dan regulasi yang ketat. Yang membuat saya berbeda adalah pengalaman ini bukan hanya teori, tapi dari project-project nyata.\nFilosofi Kerja Saya Strategi Sebelum Teknologi\nSaya telah melihat terlalu banyak organisasi membeli teknologi terbaru, hanya untuk menyadari kemudian bahwa ini tidak selaras dengan visi bisnis mereka. Pendekatan saya adalah sebaliknya: pertama pahami tujuan bisnis jangka panjang, baru kemudian pilih teknologi yang paling cocok. Kadang solusi terbaik justru yang paling sederhana.\nImplementasi yang Realistis\nSaya percaya pada “make it happen with what you have”. Solusi harus implementable dengan resources, budget, dan kapabilitas tim yang dimiliki organisasi saat ini. Membawa kompleksitas yang tidak perlu hanya menciptakan headache untuk team dan tidak sustainable. Saya lebih suka pendekatan incremental dan pragmatis.\nPertumbuhan Jangka Panjang, Bukan Quick Wins\nTransformasi digital bukan sprint, tapi marathon. Saya fokus pada value jangka panjang — sustainability, scalability, dan resilience — bukan quick wins yang tidak bertahan. Ini berarti kadang keputusan saya terlihat konservatif, tapi hasilnya lebih stabil.\nGovernance Adalah Fondasi\nBanyak orang menganggap governance sebagai “birokrasi yang mengganggu”. Saya melihatnya berbeda: governance yang kuat adalah fondasi untuk operasi yang sehat, transparan, dan akuntabel. Ketika governance jelas, operasi lebih efisien, bukan lebih rumit.\nBerbagi Pengetahuan untuk Kemajuan Bersama\nIndustri air Indonesia sedang bertransformasi. Jika kita hanya menyimpan pengetahuan, industri akan tumbuh lambat. Oleh karena itu, saya aktif berbagi pembelajaran melalui publikasi, training, dan mentoring. Ini bukan hanya untuk dapatkan visibility, tapi karena saya percaya kemajuan industri adalah tanggung jawab bersama.\nApa yang Saya Lakukan untuk Industri Air Publikasi \u0026 Thought Leadership\nSaya menulis dan berbicara secara aktif tentang transformasi digital, governance, dan operational excellence. Platform seperti Medium, conference talks, dan publikasi membantu saya menyebarkan pembelajaran. Fokusnya adalah edukasi industri, bukan personal branding. Saya ingin setiap pemimpin PDAM memahami apa yang possible dan apa yang realistis dalam konteks mereka.\nDokumentasi Lessons Learned\nSetiap project yang saya dampingi memiliki lessons learned. Saya aktif menganalisis dan mendokumentasikan ini — apa yang berhasil, apa yang tidak, dan mengapa. Resources di website ini adalah hasil dari dokumentasi ini. Saya percaya pengetahuan tidak boleh hilang setelah project selesai.\nMentoring \u0026 Knowledge Sharing\nSaya dengan senang hati berbagi pengalaman dengan profesional muda di industri air. Ada banyak talent muda yang berpotensi, dan mereka layak mendapat guidance dari senior yang sudah melewati berbagai challenges. Ini adalah cara saya berkontribusi pada pengembangan kapabilitas industri secara keseluruhan.\nSolusi yang Practical \u0026 Sustainable\nSaya fokus pada solusi yang sustainable dan scalable — yang bisa diadopsi oleh PDAM besar maupun kecil, dengan berbagai level kapabilitas. Tidak ada gunanya membawa solusi canggih yang hanya bisa dijalankan oleh PDAM dengan resources unlimited. Solusi terbaik adalah yang bisa diimplementasikan dan dijaga oleh tim yang ada.\nKomitmen Saya pada Industri Air Industri air Indonesia memiliki potensi besar, dan saya percaya dengan sungguh-sungguh bahwa berkembang melalui:\nTransformasi digital yang bertanggung jawab — teknologi bukan tujuan akhir, tapi enabler untuk mencapai misi Tata kelola yang transparan — semua stakeholder (pemerintah, PDAM, karyawan, pelanggan) berhak paham apa yang terjadi dan kenapa Operasi yang efisien — setiap rupiah investasi harus memberikan value maksimal untuk pelayanan air yang lebih baik Keberlanjutan jangka panjang — solusi yang hari ini kita bangun harus bisa dipertahankan dan bahkan ditingkatkan oleh generasi muda Ini bukan hanya motivasi profesional. Ini tentang keyakinan bahwa air adalah hak dasar manusia, dan organisasi air yang sehat adalah kunci untuk masa depan Indonesia yang lebih baik. Itulah yang memotivasi saya untuk terus belajar, berbagi pengalaman, dan berkontribusi pada industri ini.\nTertarik untuk berdiskusi atau berkolaborasi? Hubungi saya\n",
-  "wordCount" : "951",
+  "articleBody": "Tentang Perjalanan Saya di Sektor Air Sekilas\nPerjalanan saya dimulai dari dunia pengembangan perangkat lunak dan manajemen proyek, kemudian berkembang ke manajemen risiko, pengadaan, serta strategi bisnis. Selama satu dekade terakhir, fokus utama saya adalah industri utilitas air—khususnya di sektor swasta—di mana setiap hari membawa pelajaran baru tentang keseimbangan antara teknologi, operasional, dan tanggung jawab sosial.\nDari pengalaman ini, satu hal yang terus menguat: teknologi hanya alat bantu. Yang menentukan dampak sesungguhnya adalah bagaimana kita menyelaraskannya dengan tujuan organisasi, tata kelola yang jelas, dan komitmen pada layanan yang andal.\nPengalaman yang Membentuk Perspektif\nSistem yang Selaras dengan Kebutuhan\nSaya terlibat dalam berbagai upaya integrasi sistem—dari yang sederhana hingga kompleks—di sektor air dan infrastruktur kritis. Pengamatan utama: transformasi paling berhasil ketika dimulai dari pemahaman mendalam tentang proses bisnis yang ada, bukan dari teknologi yang populer. Seringkali, solusi terbaik lahir dari percakapan antara tim IT, operasional, dan manajemen untuk menemukan titik temu antara kebutuhan teknis dan realitas lapangan.\nTata Kelola yang Memudahkan\nDalam industri yang mengelola sumber daya vital, tata kelola bukanlah beban administratif. Dari diskusi dengan berbagai utilitas, saya melihat bagaimana kerangka kerja yang jelas—mulai dari manajemen vendor hingga perlindungan data—justru membebaskan tim untuk fokus pada layanan inti. Kompliansi bukan tujuan akhir, tetapi cara membangun kepercayaan dengan pelanggan, regulator, dan masyarakat.\nManajemen Proyek dengan Konteks Nyata\nSetiap proyek membawa tantangannya sendiri. Yang saya pelajari dari berbagai implementasi adalah pentingnya menyesuaikan metodologi dengan kapasitas organisasi. Tim kecil mungkin membutuhkan pendekatan lebih fleksibel, sementara organisasi besar perlu struktur yang jelas. Kunci keberhasilan sering terletak pada komunikasi transparan dan kesiapan menghadapi perubahan, bukan pada tools atau framework tertentu.\nOperasional yang Andal\nInfrastruktur air—dari sistem produksi hingga distribusi—membutuhkan keandalan ekstra. Pengalaman di lapangan menunjukkan bahwa monitoring proaktif, respons cepat terhadap insiden, dan perawatan preventif lebih berdampak jangka panjang daripada solusi instan. Dalam sistem kritis seperti jaringan distribusi, setiap detail kecil bisa berpengaruh pada ribuan pelanggan.\nFokus pada Industri Air\nSatu dekade terakhir memberi saya kesempatan untuk belajar secara mendalam tentang industri air swasta di Indonesia. Dari upaya mengurangi kebocoran hingga membangun sistem monitoring real-time, setiap proyek mengajarkan betapa uniknya tantangan di sektor ini: kombinasi aset fisik yang tersebar, regulasi yang ketat, dan tekanan untuk terus meningkatkan layanan dengan sumber daya terbatas.\nPrinsip yang Menuntun Solusi yang Sesuai Konteks\nTeknologi tercanggih belum tentu jawaban terbaik. Saya lebih percaya pada pendekatan bertahap yang mempertimbangkan kapasitas tim, anggaran, dan budaya organisasi. Kadang, perbaikan sederhana dalam prosedur atau pelatihan staf bisa memberikan dampak lebih besar daripada investasi besar dalam perangkat lunak mahal.\nKolaborasi sebagai Kunci\nTransformasi sejati terjadi ketika semua pihak—tim operasional, IT, manajemen, bahkan pelanggan—terlibat dalam prosesnya. Saya melihat bagaimana utilitas yang berhasil biasanya memulai dari diskusi terbuka tentang tantangan nyata, bukan dari presentasi teknologi canggih.\nPembelajaran Berkelanjutan\nIndustri air terus berevolusi. Daripada mengklaim memiliki jawaban pasti, saya lebih suka mendengarkan pengalaman rekan-rekan di lapangan, belajar dari kegagalan, dan menyesuaikan pendekatan sesuai perkembangan teknologi dan kebutuhan masyarakat.\nBerbagi untuk Kemajuan Bersama Saya menulis dan berbagi pengalaman ini karena percaya bahwa kemajuan sektor air membutuhkan kolaborasi. Bukan untuk membangun reputasi, tetapi karena banyak praktik baik yang bisa dipelajari dari pengalaman kolektif. Setiap utilitas—baik swasta maupun pemerintah—memiliki cerita unik yang bisa menjadi pelajaran berharga bagi yang lain.\nKomitmen pada Layanan Air yang Lebih Baik Bagi saya, industri air bukan sekadar bisnis atau pekerjaan. Ini tentang memastikan air bersih—sumber kehidupan dasar—tersedia secara andal dan adil bagi semua. Komitmen ini mendorong saya untuk terus belajar, berbagi, dan berkontribusi pada pengembangan sektor ini, dengan harapan setiap tetes air yang kita kelola benar-benar bermakna bagi masyarakat.\nSaya terbuka untuk bertukar pikiran atau berdiskusi tentang tantangan dan peluang di industri air. Bukan sebagai ahli, tetapi sebagai bagian dari komunitas yang sama-sama berusaha menjaga air tetap mengalir dengan baik.\nSalam hormat, FD Iskandar\nTertarik untuk berdiskusi atau berkolaborasi? Hubungi saya\n",
+  "wordCount" : "624",
   "inLanguage": "id",
   "image": "https://fdiskandar.com/images/og-image.png","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -122,7 +242,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "name": "FD Iskandar | Strategic Technologist",
+    "name": "FD Iskandar",
     "logo": {
       "@type": "ImageObject",
       "url": "https://fdiskandar.com/favicon.ico"
@@ -135,28 +255,8 @@
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://fdiskandar.com/" accesskey="h" title="FD Iskandar | Strategic Technologist (Alt + H)">FD Iskandar | Strategic Technologist</a>
+            <a href="https://fdiskandar.com/" accesskey="h" title="FD Iskandar (Alt + H)">FD Iskandar</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
             </div>
         </div>
         <ul id="menu">
@@ -166,23 +266,23 @@
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/expertise/" title="Keahlian">
-                    <span>Keahlian</span>
+                <a href="https://fdiskandar.com/expertise/" title="Fokus Area">
+                    <span>Fokus Area</span>
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/insights/" title="Analisis &amp; Wawasan">
-                    <span>Analisis &amp; Wawasan</span>
+                <a href="https://fdiskandar.com/insights/" title="Analisis">
+                    <span>Analisis</span>
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/resources/" title="Resources &amp; Panduan">
-                    <span>Resources &amp; Panduan</span>
+                <a href="https://fdiskandar.com/resources/" title="Resources">
+                    <span>Resources</span>
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/pemikiran/" title="Pemikiran Strategis">
-                    <span>Pemikiran Strategis</span>
+                <a href="https://fdiskandar.com/pemikiran/" title="Pemikiran">
+                    <span>Pemikiran</span>
                 </a>
             </li>
             <li>
@@ -202,59 +302,44 @@
       Tentang FD Iskandar
     </h1>
     <div class="post-description">
-      Profil profesional FD Iskandar — 30&#43; tahun di industri utilitas air Indonesia
+      Perjalanan di sektor air Indonesia — dari pengembangan software hingga fokus pada utilitas air swasta
     </div>
     <div class="post-meta"><span>FD Iskandar</span>
 
 </div>
   </header> 
-  <div class="post-content"><h2 id="tentang-saya">Tentang Saya<a hidden class="anchor" aria-hidden="true" href="#tentang-saya">#</a></h2>
-<p>Saya memulai karir di era ketika teknologi IT masih baru bagi banyak organisasi Indonesia. Lebih dari 30 tahun kemudian, setelah membantu puluhan organisasi di sektor strategis — khususnya industri air, finansial, dan infrastruktur kritis — saya telah belajar satu pelajaran penting: teknologi hanyalah tools. Yang sejati adalah bagaimana organisasi memanfaatkannya untuk mencapai misi mereka dengan governance yang kuat dan operasi yang efisien.</p>
-<p>Perjalanan profesional saya menggabungkan keahlian teknis mendalam (dari desain sistem hingga implementasi) dengan pemahaman bisnis tentang transformasi digital, manajemen risiko, dan operasi berkelanjutan.</p>
+  <div class="post-content"><h2 id="tentang-perjalanan-saya-di-sektor-air">Tentang Perjalanan Saya di Sektor Air<a hidden class="anchor" aria-hidden="true" href="#tentang-perjalanan-saya-di-sektor-air">#</a></h2>
+<p><strong>Sekilas</strong></p>
+<p>Perjalanan saya dimulai dari dunia pengembangan perangkat lunak dan manajemen proyek, kemudian berkembang ke manajemen risiko, pengadaan, serta strategi bisnis. Selama satu dekade terakhir, fokus utama saya adalah industri utilitas air—khususnya di sektor swasta—di mana setiap hari membawa pelajaran baru tentang keseimbangan antara teknologi, operasional, dan tanggung jawab sosial.</p>
+<p>Dari pengalaman ini, satu hal yang terus menguat: teknologi hanya alat bantu. Yang menentukan dampak sesungguhnya adalah bagaimana kita menyelaraskannya dengan tujuan organisasi, tata kelola yang jelas, dan komitmen pada layanan yang andal.</p>
+<p><strong>Pengalaman yang Membentuk Perspektif</strong></p>
+<p><strong>Sistem yang Selaras dengan Kebutuhan</strong></p>
+<p>Saya terlibat dalam berbagai upaya integrasi sistem—dari yang sederhana hingga kompleks—di sektor air dan infrastruktur kritis. Pengamatan utama: transformasi paling berhasil ketika dimulai dari pemahaman mendalam tentang proses bisnis yang ada, bukan dari teknologi yang populer. Seringkali, solusi terbaik lahir dari percakapan antara tim IT, operasional, dan manajemen untuk menemukan titik temu antara kebutuhan teknis dan realitas lapangan.</p>
+<p><strong>Tata Kelola yang Memudahkan</strong></p>
+<p>Dalam industri yang mengelola sumber daya vital, tata kelola bukanlah beban administratif. Dari diskusi dengan berbagai utilitas, saya melihat bagaimana kerangka kerja yang jelas—mulai dari manajemen vendor hingga perlindungan data—justru membebaskan tim untuk fokus pada layanan inti. Kompliansi bukan tujuan akhir, tetapi cara membangun kepercayaan dengan pelanggan, regulator, dan masyarakat.</p>
+<p><strong>Manajemen Proyek dengan Konteks Nyata</strong></p>
+<p>Setiap proyek membawa tantangannya sendiri. Yang saya pelajari dari berbagai implementasi adalah pentingnya menyesuaikan metodologi dengan kapasitas organisasi. Tim kecil mungkin membutuhkan pendekatan lebih fleksibel, sementara organisasi besar perlu struktur yang jelas. Kunci keberhasilan sering terletak pada komunikasi transparan dan kesiapan menghadapi perubahan, bukan pada tools atau framework tertentu.</p>
+<p><strong>Operasional yang Andal</strong></p>
+<p>Infrastruktur air—dari sistem produksi hingga distribusi—membutuhkan keandalan ekstra. Pengalaman di lapangan menunjukkan bahwa monitoring proaktif, respons cepat terhadap insiden, dan perawatan preventif lebih berdampak jangka panjang daripada solusi instan. Dalam sistem kritis seperti jaringan distribusi, setiap detail kecil bisa berpengaruh pada ribuan pelanggan.</p>
+<p><strong>Fokus pada Industri Air</strong></p>
+<p>Satu dekade terakhir memberi saya kesempatan untuk belajar secara mendalam tentang industri air swasta di Indonesia. Dari upaya mengurangi kebocoran hingga membangun sistem monitoring real-time, setiap proyek mengajarkan betapa uniknya tantangan di sektor ini: kombinasi aset fisik yang tersebar, regulasi yang ketat, dan tekanan untuk terus meningkatkan layanan dengan sumber daya terbatas.</p>
 <hr>
-<h2 id="latar-belakang-profesional">Latar Belakang Profesional<a hidden class="anchor" aria-hidden="true" href="#latar-belakang-profesional">#</a></h2>
-<p><strong>Transformasi Sistem Enterprise</strong></p>
-<p>Saya telah memimpin implementasi Enterprise Resource Planning (ERP) untuk berbagai organisasi dan skala, dari PDAM regional hingga perusahaan multinasional. Pengalaman ini mengajarkan saya bahwa transformasi sistem bukan hanya tentang teknologi, tapi tentang redesign proses bisnis dan manajemen perubahan. Saya telah membantu organisasi mengintegrasikan data dari sistem legacy yang kompleks ke platform modern, sambil memastikan business continuity dan adopsi pengguna yang smooth.</p>
-<p><strong>Tata Kelola &amp; Manajemen Risiko</strong></p>
-<p>Dalam bekerja dengan organisasi infrastruktur kritis, saya memahami pentingnya governance yang kuat. Saya telah mengembangkan framework tata kelola IT yang compliant dengan regulasi nasional dan internasional, dari ISO 27001 hingga standar industry-specific. Manajemen risiko bukan hanya checklist compliance bagi saya — ini tentang melindungi organisasi dan stakeholder mereka. Saya juga telah setup Program Management Office (PMO) dan melakukan vendor due diligence untuk memastikan kualitas dan reliability dalam setiap partnership teknologi.</p>
-<p><strong>Kepemimpinan Program &amp; Proyek</strong></p>
-<p>Saya telah memimpin program transformasi bernilai miliaran rupiah dengan kompleksitas tinggi. Manajemen tim 20+ engineer dan koordinasi lintas fungsi diperlukan untuk mencapai hasil. Metodologi seperti IBM RUP, PMI standards, dan COBIT framework menjadi tools saya, tapi filosofi tetap sama: hasil yang terukur, komunikasi yang jelas, dan accountability di setiap level.</p>
-<p><strong>Infrastruktur Teknologi &amp; Operasi</strong></p>
-<p>Infrastruktur adalah tulang punggung operasi. Saya telah mendesain dan mengoptimalkan sistem monitoring terpusat, incident response frameworks, dan network architecture untuk memastikan reliability maksimal. Dalam konteks infrastruktur kritis seperti SCADA systems, keamanan dan reliability tidak bisa dikompromikan.</p>
-<p><strong>Spesialisasi Industri Air</strong></p>
-<p>Pengalaman terdalam saya adalah di industri air. Saya telah membantu PDAM dengan berbagai tantangan: dari implementasi dashboard SCADA real-time untuk visibilitas operasional, hingga strategi pengurangan air hilang (NRW reduction) yang menghasilkan penghematan signifikan. Saya juga paham challenge unik industri ini — kombinasi asset yang tersebar, sistem teknis yang kompleks, dan regulasi yang ketat. Yang membuat saya berbeda adalah pengalaman ini bukan hanya teori, tapi dari project-project nyata.</p>
+<h2 id="prinsip-yang-menuntun">Prinsip yang Menuntun<a hidden class="anchor" aria-hidden="true" href="#prinsip-yang-menuntun">#</a></h2>
+<p><strong>Solusi yang Sesuai Konteks</strong></p>
+<p>Teknologi tercanggih belum tentu jawaban terbaik. Saya lebih percaya pada pendekatan bertahap yang mempertimbangkan kapasitas tim, anggaran, dan budaya organisasi. Kadang, perbaikan sederhana dalam prosedur atau pelatihan staf bisa memberikan dampak lebih besar daripada investasi besar dalam perangkat lunak mahal.</p>
+<p><strong>Kolaborasi sebagai Kunci</strong></p>
+<p>Transformasi sejati terjadi ketika semua pihak—tim operasional, IT, manajemen, bahkan pelanggan—terlibat dalam prosesnya. Saya melihat bagaimana utilitas yang berhasil biasanya memulai dari diskusi terbuka tentang tantangan nyata, bukan dari presentasi teknologi canggih.</p>
+<p><strong>Pembelajaran Berkelanjutan</strong></p>
+<p>Industri air terus berevolusi. Daripada mengklaim memiliki jawaban pasti, saya lebih suka mendengarkan pengalaman rekan-rekan di lapangan, belajar dari kegagalan, dan menyesuaikan pendekatan sesuai perkembangan teknologi dan kebutuhan masyarakat.</p>
 <hr>
-<h2 id="filosofi-kerja-saya">Filosofi Kerja Saya<a hidden class="anchor" aria-hidden="true" href="#filosofi-kerja-saya">#</a></h2>
-<p><strong>Strategi Sebelum Teknologi</strong></p>
-<p>Saya telah melihat terlalu banyak organisasi membeli teknologi terbaru, hanya untuk menyadari kemudian bahwa ini tidak selaras dengan visi bisnis mereka. Pendekatan saya adalah sebaliknya: pertama pahami tujuan bisnis jangka panjang, baru kemudian pilih teknologi yang paling cocok. Kadang solusi terbaik justru yang paling sederhana.</p>
-<p><strong>Implementasi yang Realistis</strong></p>
-<p>Saya percaya pada &ldquo;make it happen with what you have&rdquo;. Solusi harus implementable dengan resources, budget, dan kapabilitas tim yang dimiliki organisasi saat ini. Membawa kompleksitas yang tidak perlu hanya menciptakan headache untuk team dan tidak sustainable. Saya lebih suka pendekatan incremental dan pragmatis.</p>
-<p><strong>Pertumbuhan Jangka Panjang, Bukan Quick Wins</strong></p>
-<p>Transformasi digital bukan sprint, tapi marathon. Saya fokus pada value jangka panjang — sustainability, scalability, dan resilience — bukan quick wins yang tidak bertahan. Ini berarti kadang keputusan saya terlihat konservatif, tapi hasilnya lebih stabil.</p>
-<p><strong>Governance Adalah Fondasi</strong></p>
-<p>Banyak orang menganggap governance sebagai &ldquo;birokrasi yang mengganggu&rdquo;. Saya melihatnya berbeda: governance yang kuat adalah fondasi untuk operasi yang sehat, transparan, dan akuntabel. Ketika governance jelas, operasi lebih efisien, bukan lebih rumit.</p>
-<p><strong>Berbagi Pengetahuan untuk Kemajuan Bersama</strong></p>
-<p>Industri air Indonesia sedang bertransformasi. Jika kita hanya menyimpan pengetahuan, industri akan tumbuh lambat. Oleh karena itu, saya aktif berbagi pembelajaran melalui publikasi, training, dan mentoring. Ini bukan hanya untuk dapatkan visibility, tapi karena saya percaya kemajuan industri adalah tanggung jawab bersama.</p>
+<h2 id="berbagi-untuk-kemajuan-bersama">Berbagi untuk Kemajuan Bersama<a hidden class="anchor" aria-hidden="true" href="#berbagi-untuk-kemajuan-bersama">#</a></h2>
+<p>Saya menulis dan berbagi pengalaman ini karena percaya bahwa kemajuan sektor air membutuhkan kolaborasi. Bukan untuk membangun reputasi, tetapi karena banyak praktik baik yang bisa dipelajari dari pengalaman kolektif. Setiap utilitas—baik swasta maupun pemerintah—memiliki cerita unik yang bisa menjadi pelajaran berharga bagi yang lain.</p>
 <hr>
-<h2 id="apa-yang-saya-lakukan-untuk-industri-air">Apa yang Saya Lakukan untuk Industri Air<a hidden class="anchor" aria-hidden="true" href="#apa-yang-saya-lakukan-untuk-industri-air">#</a></h2>
-<p><strong>Publikasi &amp; Thought Leadership</strong></p>
-<p>Saya menulis dan berbicara secara aktif tentang transformasi digital, governance, dan operational excellence. Platform seperti Medium, conference talks, dan publikasi membantu saya menyebarkan pembelajaran. Fokusnya adalah edukasi industri, bukan personal branding. Saya ingin setiap pemimpin PDAM memahami apa yang possible dan apa yang realistis dalam konteks mereka.</p>
-<p><strong>Dokumentasi Lessons Learned</strong></p>
-<p>Setiap project yang saya dampingi memiliki lessons learned. Saya aktif menganalisis dan mendokumentasikan ini — apa yang berhasil, apa yang tidak, dan mengapa. Resources di website ini adalah hasil dari dokumentasi ini. Saya percaya pengetahuan tidak boleh hilang setelah project selesai.</p>
-<p><strong>Mentoring &amp; Knowledge Sharing</strong></p>
-<p>Saya dengan senang hati berbagi pengalaman dengan profesional muda di industri air. Ada banyak talent muda yang berpotensi, dan mereka layak mendapat guidance dari senior yang sudah melewati berbagai challenges. Ini adalah cara saya berkontribusi pada pengembangan kapabilitas industri secara keseluruhan.</p>
-<p><strong>Solusi yang Practical &amp; Sustainable</strong></p>
-<p>Saya fokus pada solusi yang sustainable dan scalable — yang bisa diadopsi oleh PDAM besar maupun kecil, dengan berbagai level kapabilitas. Tidak ada gunanya membawa solusi canggih yang hanya bisa dijalankan oleh PDAM dengan resources unlimited. Solusi terbaik adalah yang bisa diimplementasikan dan dijaga oleh tim yang ada.</p>
-<hr>
-<h2 id="komitmen-saya-pada-industri-air">Komitmen Saya pada Industri Air<a hidden class="anchor" aria-hidden="true" href="#komitmen-saya-pada-industri-air">#</a></h2>
-<p>Industri air Indonesia memiliki potensi besar, dan saya percaya dengan sungguh-sungguh bahwa berkembang melalui:</p>
-<ul>
-<li><strong>Transformasi digital yang bertanggung jawab</strong> — teknologi bukan tujuan akhir, tapi enabler untuk mencapai misi</li>
-<li><strong>Tata kelola yang transparan</strong> — semua stakeholder (pemerintah, PDAM, karyawan, pelanggan) berhak paham apa yang terjadi dan kenapa</li>
-<li><strong>Operasi yang efisien</strong> — setiap rupiah investasi harus memberikan value maksimal untuk pelayanan air yang lebih baik</li>
-<li><strong>Keberlanjutan jangka panjang</strong> — solusi yang hari ini kita bangun harus bisa dipertahankan dan bahkan ditingkatkan oleh generasi muda</li>
-</ul>
-<p>Ini bukan hanya motivasi profesional. Ini tentang keyakinan bahwa air adalah hak dasar manusia, dan organisasi air yang sehat adalah kunci untuk masa depan Indonesia yang lebih baik. Itulah yang memotivasi saya untuk terus belajar, berbagi pengalaman, dan berkontribusi pada industri ini.</p>
+<h2 id="komitmen-pada-layanan-air-yang-lebih-baik">Komitmen pada Layanan Air yang Lebih Baik<a hidden class="anchor" aria-hidden="true" href="#komitmen-pada-layanan-air-yang-lebih-baik">#</a></h2>
+<p>Bagi saya, industri air bukan sekadar bisnis atau pekerjaan. Ini tentang memastikan air bersih—sumber kehidupan dasar—tersedia secara andal dan adil bagi semua. Komitmen ini mendorong saya untuk terus belajar, berbagi, dan berkontribusi pada pengembangan sektor ini, dengan harapan setiap tetes air yang kita kelola benar-benar bermakna bagi masyarakat.</p>
+<p>Saya terbuka untuk bertukar pikiran atau berdiskusi tentang tantangan dan peluang di industri air. Bukan sebagai ahli, tetapi sebagai bagian dari komunitas yang sama-sama berusaha menjaga air tetap mengalir dengan baik.</p>
+<p><em>Salam hormat,
+FD Iskandar</em></p>
 <hr>
 <p><strong>Tertarik untuk berdiskusi atau berkolaborasi?</strong> <a href="/contact/">Hubungi saya</a></p>
 
@@ -269,7 +354,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://fdiskandar.com/">FD Iskandar | Strategic Technologist</a></span> · 
+        <span>&copy; 2025 <a href="https://fdiskandar.com/">FD Iskandar</a></span> · 
 
     <span>
         Powered by
@@ -328,19 +413,6 @@
             mybutton.style.opacity = "0";
         }
     };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
 
 </script>
 </body>

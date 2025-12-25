@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Keahlian on FD Iskandar | Strategic Technologist</title>
+    <title>Catatan dari Perjalanan Bersama di Sektor Air on FD Iskandar</title>
     <link>https://fdiskandar.com/expertise/</link>
-    <description>Recent content in Keahlian on FD Iskandar | Strategic Technologist</description>
+    <description>Recent content in Catatan dari Perjalanan Bersama di Sektor Air on FD Iskandar</description>
     <image>
-      <title>FD Iskandar | Strategic Technologist</title>
+      <title>FD Iskandar</title>
       <url>https://fdiskandar.com/images/og-image.png</url>
       <link>https://fdiskandar.com/images/og-image.png</link>
     </image>
@@ -13,32 +13,32 @@
     <language>id</language>
     <atom:link href="https://fdiskandar.com/expertise/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Keamanan Siber</title>
+      <title>Catatan tentang Keamanan Siber</title>
       <link>https://fdiskandar.com/expertise/cybersecurity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/expertise/cybersecurity/</guid>
-      <description>Strategi keamanan siber untuk infrastruktur kritis utilitas air</description>
+      <description>Observasi mengenai strategi keamanan siber untuk infrastruktur kritis utilitas air</description>
     </item>
     <item>
-      <title>Pengurangan Air Hilang (NRW)</title>
+      <title>Catatan tentang Pengurangan Air Hilang (NRW)</title>
       <link>https://fdiskandar.com/expertise/nrw/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/expertise/nrw/</guid>
-      <description>Strategi sistematis pengurangan air hilang (NRW) untuk utilitas air</description>
+      <description>Observasi lapangan mengenai upaya pengurangan air hilang (NRW) di berbagai utilitas air</description>
     </item>
     <item>
-      <title>Tata Kelola, Risiko &amp; Kepatuhan (GRC)</title>
+      <title>Catatan tentang Tata Kelola &amp; Risiko (GRC)</title>
       <link>https://fdiskandar.com/expertise/grc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/expertise/grc/</guid>
-      <description>Framework GRC untuk utilitas air dan infrastruktur kritis</description>
+      <description>Observasi mengenai penerapan framework GRC pada utilitas air dan infrastruktur kritis</description>
     </item>
     <item>
-      <title>Transformasi Digital</title>
+      <title>Catatan tentang Transformasi Digital</title>
       <link>https://fdiskandar.com/expertise/digital-transformation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/expertise/digital-transformation/</guid>
-      <description>Strategi dan panduan transformasi digital untuk utilitas air Indonesia</description>
+      <description>Beberapa catatan dan pola yang sering terlihat dalam perjalanan transformasi digital di sektor utilitas air.</description>
     </item>
   </channel>
 </rss>

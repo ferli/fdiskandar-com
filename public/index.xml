@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>FD Iskandar | Teknolog Strategis untuk Industri Air Indonesia on FD Iskandar | Strategic Technologist</title>
+    <title>FD Iskandar | Teknolog Strategis untuk Industri Air Indonesia on FD Iskandar</title>
     <link>https://fdiskandar.com/</link>
-    <description>Recent content in FD Iskandar | Teknolog Strategis untuk Industri Air Indonesia on FD Iskandar | Strategic Technologist</description>
+    <description>Recent content in FD Iskandar | Teknolog Strategis untuk Industri Air Indonesia on FD Iskandar</description>
     <image>
-      <title>FD Iskandar | Strategic Technologist</title>
+      <title>FD Iskandar</title>
       <url>https://fdiskandar.com/images/og-image.png</url>
       <link>https://fdiskandar.com/images/og-image.png</link>
     </image>
@@ -14,11 +14,11 @@
     <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://fdiskandar.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Benchmark Kinerja PDAM: Analisis Komparatif</title>
+      <title>Tolok Ukur Kinerja Utilitas Air: Analisis Komparatif</title>
       <link>https://fdiskandar.com/insights/benchmark-pdam/</link>
       <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/insights/benchmark-pdam/</guid>
-      <description>Analisis benchmark performance PDAM Indonesia berdasarkan metrik operasional dan finansial</description>
+      <description>Analisis perbandingan kinerja utilitas air di Indonesia berdasarkan metrik operasional dan finansial</description>
     </item>
     <item>
       <title>Tren Industri Air Indonesia: Analisis 5 Tahun Ke Depan</title>
@@ -32,7 +32,7 @@
       <link>https://fdiskandar.com/insights/regulasi-landscape/</link>
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/insights/regulasi-landscape/</guid>
-      <description>Analisis komprehensif regulasi industri utilitas air Indonesia dan implications untuk PDAM</description>
+      <description>Analisis komprehensif regulasi industri utilitas air Indonesia dan implications untuk utilitas air</description>
     </item>
     <item>
       <title>Framework Tata Kelola IT (GRC)</title>
@@ -53,56 +53,56 @@
       <link>https://fdiskandar.com/pemikiran/masa-depan-air-indonesia/</link>
       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/pemikiran/masa-depan-air-indonesia/</guid>
-      <description>Essay strategis tentang prospek industri utilitas air Indonesia 10-20 tahun ke depan</description>
+      <description>Esai strategis tentang prospek industri utilitas air Indonesia 10-20 tahun ke depan</description>
     </item>
     <item>
-      <title>Kepemimpinan di Era Transformasi: Refleksi 30 Tahun</title>
+      <title>Kepemimpinan di Era Transformasi: Sebuah Refleksi</title>
       <link>https://fdiskandar.com/pemikiran/kepemimpinan-transformasi/</link>
       <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/pemikiran/kepemimpinan-transformasi/</guid>
-      <description>Essay tentang kepemimpinan, leadership challenge, dan lesson learned dalam transformasi organisasi</description>
+      <description>Esai tentang tantangan kepemimpinan dan pembelajaran dalam transformasi organisasi</description>
     </item>
     <item>
-      <title>Contact</title>
-      <link>https://fdiskandar.com/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fdiskandar.com/contact/</guid>
-      <description>Hubungi FD Iskandar</description>
-    </item>
-    <item>
-      <title>Keamanan Siber</title>
+      <title>Catatan tentang Keamanan Siber</title>
       <link>https://fdiskandar.com/expertise/cybersecurity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/expertise/cybersecurity/</guid>
-      <description>Strategi keamanan siber untuk infrastruktur kritis utilitas air</description>
+      <description>Observasi mengenai strategi keamanan siber untuk infrastruktur kritis utilitas air</description>
     </item>
     <item>
-      <title>Pengurangan Air Hilang (NRW)</title>
+      <title>Catatan tentang Pengurangan Air Hilang (NRW)</title>
       <link>https://fdiskandar.com/expertise/nrw/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/expertise/nrw/</guid>
-      <description>Strategi sistematis pengurangan air hilang (NRW) untuk utilitas air</description>
+      <description>Observasi lapangan mengenai upaya pengurangan air hilang (NRW) di berbagai utilitas air</description>
     </item>
     <item>
-      <title>Tata Kelola, Risiko &amp; Kepatuhan (GRC)</title>
+      <title>Catatan tentang Tata Kelola &amp; Risiko (GRC)</title>
       <link>https://fdiskandar.com/expertise/grc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/expertise/grc/</guid>
-      <description>Framework GRC untuk utilitas air dan infrastruktur kritis</description>
+      <description>Observasi mengenai penerapan framework GRC pada utilitas air dan infrastruktur kritis</description>
+    </item>
+    <item>
+      <title>Catatan tentang Transformasi Digital</title>
+      <link>https://fdiskandar.com/expertise/digital-transformation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fdiskandar.com/expertise/digital-transformation/</guid>
+      <description>Beberapa catatan dan pola yang sering terlihat dalam perjalanan transformasi digital di sektor utilitas air.</description>
+    </item>
+    <item>
+      <title>Kontak</title>
+      <link>https://fdiskandar.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fdiskandar.com/contact/</guid>
+      <description>Hubungi FD Iskandar untuk berdiskusi dan bertukar pikiran</description>
     </item>
     <item>
       <title>Tentang FD Iskandar</title>
       <link>https://fdiskandar.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://fdiskandar.com/about/</guid>
-      <description>Profil profesional FD Iskandar — 30&#43; tahun di industri utilitas air Indonesia</description>
-    </item>
-    <item>
-      <title>Transformasi Digital</title>
-      <link>https://fdiskandar.com/expertise/digital-transformation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fdiskandar.com/expertise/digital-transformation/</guid>
-      <description>Strategi dan panduan transformasi digital untuk utilitas air Indonesia</description>
+      <description>Perjalanan di sektor air Indonesia — dari pengembangan software hingga fokus pada utilitas air swasta</description>
     </item>
   </channel>
 </rss>

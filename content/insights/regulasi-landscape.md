@@ -8,7 +8,7 @@ date: 2025-12-13
 
 Regulatory compliance adalah salah satu area yang paling sering membuat pemimpin utilitas air frustrated. Regulasi terus berubah, kadang contradictory, dan enforcement tidak selalu konsisten. Tapi dalam pengalaman saya, organisasi yang build strong compliance culture tidak melihatnya sebagai burden—mereka melihatnya sebagai opportunity untuk build stronger organization.
 
-Industri utilitas air Indonesia beroperasi dalam ekosistem regulasi yang kompleks dan terus berkembang. Regulasi datang dari multiple levels (nasional, provinsi, kota) dan multiple agencies (Kementerian, BSSN, BPK, DPR, DPRD) dengan sometimes overlapping atau conflicting requirements. Navigasi ini requires clear understanding dan practical strategy.
+Industri utilitas air Indonesia beroperasi dalam ekosistem regulasi yang kompleks dan terus berkembang. Regulasi datang dari multiple levels (nasional, provinsi, kota) dan multiple agencies (Kementerian, BSSN, BPK, DPRD) dengan sometimes overlapping atau conflicting requirements. Navigasi ini requires clear understanding dan practical strategy.
 
 Panduan ini mengidentifikasi key regulations, interpret implications untuk utilitas air, dan provide practical compliance roadmap yang balanced antara compliance rigor dan operational pragmatism.
 

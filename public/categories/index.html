@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="id" dir="auto" data-theme="auto">
+<html lang="id" dir="auto" data-theme="dark">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Categories | FD Iskandar | Strategic Technologist</title>
+<title>Categories | FD Iskandar</title>
 <meta name="keywords" content="">
-<meta name="description" content="30&#43; tahun expertise di industri utilitas air Indonesia. Spesialisasi: Digital Transformation, GRC, NRW Management, Cybersecurity.">
+<meta name="description" content="Catatan perjalanan dan pembelajaran di sektor utilitas air Indonesia. Diskusi tentang transformasi, tata kelola, dan keberlanjutan.">
 <meta name="author" content="FD Iskandar">
 <link rel="canonical" href="https://fdiskandar.com/categories/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fd5566c526ae48aadabd950798a2dc3568536401560eae5caac3765a42a9e7b5.css" integrity="sha256-/VVmxSauSKravZUHmKLcNWhTZAFWDq5cqsN2WkKp57U=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.680a68261679651942df11764b0d706558a80532e1011737a8e10563783aed76.css" integrity="sha256-aApoJhZ5ZRlC3xF2Sw1wZVioBTLhARc3qOEFY3g67XY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://fdiskandar.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://fdiskandar.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://fdiskandar.com/favicon-32x32.png">
@@ -28,88 +28,188 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
 </noscript>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
+document.addEventListener('DOMContentLoaded', function() {
+  
 
-</script><meta property="og:url" content="https://fdiskandar.com/categories/">
-  <meta property="og:site_name" content="FD Iskandar | Strategic Technologist">
+  
+  
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-visible');
+        
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  
+  document.querySelectorAll('.post-entry, article, .post-content > *').forEach(el => {
+    if (!el.classList.contains('fade-in')) {
+      el.classList.add('fade-in');
+    }
+    observer.observe(el);
+  });
+
+  
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+
+      
+      if (href !== '#' && href.length > 1) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+
+        if (target) {
+          
+          const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+
+          
+          window.history.pushState(null, null, href);
+        }
+      }
+    });
+  });
+
+  
+  function updateActiveHeading() {
+    const headings = document.querySelectorAll('h2[id], h3[id]');
+    const scrollPosition = window.scrollY + 100;
+
+    headings.forEach(heading => {
+      if (heading.offsetTop <= scrollPosition) {
+        
+        heading.classList.add('in-view');
+      } else {
+        heading.classList.remove('in-view');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveHeading, { passive: true });
+
+  
+  const pageHeader = document.querySelector('.page-header');
+  if (pageHeader) {
+    window.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      pageHeader.style.transform = 'translateY(' + scrolled * 0.5 + 'px)';
+    }, { passive: true });
+  }
+
+  
+  window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+  });
+
+  
+  const images = document.querySelectorAll('img');
+  images.forEach(img => {
+    if (!img.complete) {
+      img.addEventListener('load', function() {
+        this.classList.add('loaded');
+      });
+    } else {
+      img.classList.add('loaded');
+    }
+  });
+});
+
+
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.style.scrollBehavior = 'auto';
+}
+</script>
+
+
+<style>
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.in-view {
+  color: var(--accent-bright);
+}
+
+ 
+img {
+  display: block;
+}
+
+ 
+html {
+  scroll-padding-top: 80px;
+}
+
+ 
+.loading {
+  animation: skeleton-loading 1.5s infinite;
+  background: linear-gradient(90deg, var(--entry) 25%, var(--border) 50%, var(--entry) 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+ 
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+</style>
+<meta property="og:url" content="https://fdiskandar.com/categories/">
+  <meta property="og:site_name" content="FD Iskandar">
   <meta property="og:title" content="Categories">
-  <meta property="og:description" content="30&#43; tahun expertise di industri utilitas air Indonesia. Spesialisasi: Digital Transformation, GRC, NRW Management, Cybersecurity.">
+  <meta property="og:description" content="Catatan perjalanan dan pembelajaran di sektor utilitas air Indonesia. Diskusi tentang transformasi, tata kelola, dan keberlanjutan.">
   <meta property="og:locale" content="id">
   <meta property="og:type" content="website">
       <meta property="og:image" content="https://fdiskandar.com/images/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://fdiskandar.com/images/og-image.png">
 <meta name="twitter:title" content="Categories">
-<meta name="twitter:description" content="30&#43; tahun expertise di industri utilitas air Indonesia. Spesialisasi: Digital Transformation, GRC, NRW Management, Cybersecurity.">
+<meta name="twitter:description" content="Catatan perjalanan dan pembelajaran di sektor utilitas air Indonesia. Diskusi tentang transformasi, tata kelola, dan keberlanjutan.">
 
 </head>
 <body class="list" id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://fdiskandar.com/" accesskey="h" title="FD Iskandar | Strategic Technologist (Alt + H)">FD Iskandar | Strategic Technologist</a>
+            <a href="https://fdiskandar.com/" accesskey="h" title="FD Iskandar (Alt + H)">FD Iskandar</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
             </div>
         </div>
         <ul id="menu">
@@ -119,23 +219,23 @@
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/expertise/" title="Keahlian">
-                    <span>Keahlian</span>
+                <a href="https://fdiskandar.com/expertise/" title="Fokus Area">
+                    <span>Fokus Area</span>
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/insights/" title="Analisis &amp; Wawasan">
-                    <span>Analisis &amp; Wawasan</span>
+                <a href="https://fdiskandar.com/insights/" title="Analisis">
+                    <span>Analisis</span>
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/resources/" title="Resources &amp; Panduan">
-                    <span>Resources &amp; Panduan</span>
+                <a href="https://fdiskandar.com/resources/" title="Resources">
+                    <span>Resources</span>
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/pemikiran/" title="Pemikiran Strategis">
-                    <span>Pemikiran Strategis</span>
+                <a href="https://fdiskandar.com/pemikiran/" title="Pemikiran">
+                    <span>Pemikiran</span>
                 </a>
             </li>
             <li>
@@ -156,7 +256,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://fdiskandar.com/">FD Iskandar | Strategic Technologist</a></span> · 
+        <span>&copy; 2025 <a href="https://fdiskandar.com/">FD Iskandar</a></span> · 
 
     <span>
         Powered by
@@ -215,19 +315,6 @@
             mybutton.style.opacity = "0";
         }
     };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
 
 </script>
 </body>

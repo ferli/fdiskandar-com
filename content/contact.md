@@ -1,32 +1,29 @@
 ---
-title: "Contact"
-description: "Hubungi FD Iskandar"
+title: "Kontak"
+description: "Hubungi FD Iskandar untuk berdiskusi dan bertukar pikiran"
 ---
 
 ## Mari Berdiskusi
 
-Saya senang berbicara tentang tantangan yang Anda hadapi — baik itu transformasi digital, governance, NRW reduction, atau cybersecurity. Tidak ada masalah yang terlalu kompleks atau pertanyaan yang terlalu sederhana. Saya percaya pada percakapan terbuka dan saling belajar.
+Saya percaya bahwa ide-ide terbaik sering lahir dari percakapan yang terbuka. Saya selalu senang bertukar pikiran tentang tantangan di sektor air, berbagi pengalaman, atau sekadar mendengarkan perspektif baru dari rekan-rekan sejawat.
 
-### Cara Menghubungi
+### Kanal Komunikasi
 
-**Email:** [ferli.deni.iskandar@gmail.com](ferli.deni.iskandar@gmail.com)
+**Email:** [ferli.deni.iskandar@gmail.com](mailto:ferli.deni.iskandar@gmail.com)
 
 **LinkedIn:** [FD Iskandar](https://linkedin.com/in/ferli)
 
 ---
 
-### Bagaimana Saya Bisa Membantu
+### Topik Diskusi
 
-- **Digital Transformation Strategy** — Kami kembangkan roadmap yang realistis untuk modernisasi organisasi Anda, disesuaikan dengan resources dan kapabilitas yang dimiliki
-- **GRC Framework Development** — Membangun governance yang sustainable, bukan hanya compliance checklist, tapi fondasi untuk operasi yang sehat
-- **NRW Reduction Consulting** — Dari strategy hingga implementasi, dengan focus pada hasil yang terukur dan sustainable
-- **Cybersecurity Assessment** — Evaluate posture keamanan organisasi Anda dan develop practical recommendations untuk improvement
-- **Advisory & Mentoring** — Board-level discussions, mentoring untuk tim muda, atau sekedar sounding board untuk ide strategis Anda
+Jangan ragu untuk menyapa jika Anda ingin berdiskusi mengenai:
 
-### Respons Time
+- **Pengalaman Transformasi Digital** — Bertukar cerita tentang apa yang berhasil dan gagal dalam inisiatif digitalisasi.
+- **Tantangan Tata Kelola (GRC)** — Berdiskusi tentang bagaimana membangun budaya tata kelola yang sehat di lingkungan utilitas.
+- **Efisiensi & NRW** — Saling berbagi metode praktis dalam menangani kehilangan air dan efisiensi operasional.
+- **Isu Keamanan Siber** — Diskusi tentang membangun kesadaran keamanan di organisasi infrastruktur kritis.
+- **Mentoring & Karir** — Saya terbuka untuk berbagi pengalaman dengan profesional muda yang baru merintis karir di sektor ini.
 
-Saya biasanya merespons inquiries dalam 24 jam. Untuk diskusi kompleks, kami bisa schedule video call untuk deep dive conversation.
+Saya berusaha untuk merespons setiap pesan secepat mungkin, biasanya dalam waktu 1-2 hari. Mari jaga tali silaturahmi dan terus belajar bersama.
 
----
-
-Apakah ada tantangan spesifik yang ingin Anda diskusikan? Saya siap mendengarkan. Hubungi saya melalui email atau LinkedIn di atas — saya akan respons dengan cepat dan sungguh-sungguh dalam memahami situasi Anda.

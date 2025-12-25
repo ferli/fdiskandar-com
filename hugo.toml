@@ -1,7 +1,7 @@
 baseURL = "https://fdiskandar.com/"
 languageCode = "id"
 defaultContentLanguage = "id"
-title = "FD Iskandar | Strategic Technologist"
+title = "FD Iskandar"
 theme = "PaperMod"
 
 # Build settings
@@ -16,9 +16,9 @@ pagination.pagerSize = 10
 
 [params]
   env = "production"
-  description = "30+ tahun expertise di industri utilitas air Indonesia. Spesialisasi: Digital Transformation, GRC, NRW Management, Cybersecurity."
+  description = "Catatan perjalanan dan pembelajaran di sektor utilitas air Indonesia. Diskusi tentang transformasi, tata kelola, dan keberlanjutan."
   author = "FD Iskandar"
-  keywords = ["konsultan PDAM", "digitalisasi utilitas air", "NRW PDAM", "GRC water utility"]
+  keywords = ["utilitas air", "pembelajaran sektor air", "transformasi digital air", "tata kelola air", "NRW", "GRC"]
   images = ["/images/og-image.png"]
 
   # Force dark mode only - disable theme toggle
@@ -26,8 +26,8 @@ pagination.pagerSize = 10
   defaultTheme = "dark"
 
   [params.homeInfoParams]
-    Title = "Strategic Technologist for Water Utilities"
-    Content = "Membantu organisasi air bertransformasi secara digital dengan governance yang kuat.\n\n**30+ tahun pengalaman** | **4 domain expertise** | **Publikasi & knowledge sharing**"
+    Title = "Berbagi Pembelajaran untuk Utilitas Air"
+    Content = "Kumpulan catatan, observasi, dan diskusi tentang transformasi digital, tata kelola, dan keberlanjutan layanan air bersih.\n\n**Berbagi Pengalaman** | **Diskusi Terbuka** | **Pembelajaran Kolektif**"
 
   [[params.socialIcons]]
     name = "linkedin"
@@ -46,25 +46,25 @@ pagination.pagerSize = 10
 
   [[menu.main]]
     identifier = "expertise"
-    name = "Keahlian"
+    name = "Fokus Area"
     url = "/expertise/"
     weight = 2
 
   [[menu.main]]
     identifier = "insights"
-    name = "Analisis & Wawasan"
+    name = "Analisis"
     url = "/insights/"
     weight = 3
 
   [[menu.main]]
     identifier = "resources"
-    name = "Resources & Panduan"
+    name = "Resources"
     url = "/resources/"
     weight = 4
 
   [[menu.main]]
     identifier = "pemikiran"
-    name = "Pemikiran Strategis"
+    name = "Pemikiran"
     url = "/pemikiran/"
     weight = 5
 

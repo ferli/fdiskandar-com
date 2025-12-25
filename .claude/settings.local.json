@@ -16,7 +16,19 @@
       "Bash(hugo server:*)",
       "Bash(cat:*)",
       "Bash(git config:*)",
-      "Bash(git remote:*)"
+      "Bash(git remote:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nPersonalize content for fdiskandar.com - update branding and personal brand voice\n\n- Update hugo.toml baseURL from rinji.id to fdiskandar.com\n- Rewrite homepage with personal storytelling\n- Strengthen about.md with personal narrative and philosophy\n- Make contact.md warm and approachable\n- Add personal intros to all expertise pages (5 files)\n- Strengthen personal voice in strategic thinking section (3 files)\n- Add personal perspective to industry insights (4 files)\n- Add implementation context to resources (3 files)\n- Rebuild public/ with updated content\n\nChanges reflect shift from consultant-speak to personal brand voice with authentic storytelling and real experience from 30+ years in the industry.\n\n🤖 Generated with Claude Code\n\nCo-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(gh:*)",
+      "Bash(hugo --quiet:*)",
+      "Bash(grep:*)",
+      "Bash(for dir in articles expertise insights pemikiran resources)",
+      "SlashCommand(/init)",
+      "WebFetch(domain:github.com)",
+      "Bash(find:*)",
+      "Bash(git -C \"C:\\Repo\\fdiskandar-com\" log --oneline -5)",
+      "Bash(git -C \"C:\\Repo\\fdiskandar-com\" status)",
+      "Bash(del:*)"
     ]
   }
 }

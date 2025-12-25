@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="id" dir="auto" data-theme="auto">
+<html lang="id" dir="auto" data-theme="dark">
 
 <head>
 	<meta name="generator" content="Hugo 0.152.2"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>FD Iskandar | Strategic Technologist</title>
-<meta name="keywords" content="konsultan PDAM, digitalisasi utilitas air, NRW PDAM, GRC water utility">
+<title>FD Iskandar</title>
+<meta name="keywords" content="utilitas air, pembelajaran sektor air, transformasi digital air, tata kelola air, NRW, GRC">
 <meta name="description" content="30&#43; tahun membantu transformasi digital industri utilitas air Indonesia dengan governance yang kuat">
 <meta name="author" content="FD Iskandar">
 <link rel="canonical" href="https://fdiskandar.com/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fd5566c526ae48aadabd950798a2dc3568536401560eae5caac3765a42a9e7b5.css" integrity="sha256-/VVmxSauSKravZUHmKLcNWhTZAFWDq5cqsN2WkKp57U=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.680a68261679651942df11764b0d706558a80532e1011737a8e10563783aed76.css" integrity="sha256-aApoJhZ5ZRlC3xF2Sw1wZVioBTLhARc3qOEFY3g67XY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://fdiskandar.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://fdiskandar.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://fdiskandar.com/favicon-32x32.png">
@@ -30,51 +30,171 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
 </noscript>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
+document.addEventListener('DOMContentLoaded', function() {
+  
 
-</script><meta property="og:url" content="https://fdiskandar.com/">
-  <meta property="og:site_name" content="FD Iskandar | Strategic Technologist">
+  
+  
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-visible');
+        
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  
+  document.querySelectorAll('.post-entry, article, .post-content > *').forEach(el => {
+    if (!el.classList.contains('fade-in')) {
+      el.classList.add('fade-in');
+    }
+    observer.observe(el);
+  });
+
+  
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+
+      
+      if (href !== '#' && href.length > 1) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+
+        if (target) {
+          
+          const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+
+          
+          window.history.pushState(null, null, href);
+        }
+      }
+    });
+  });
+
+  
+  function updateActiveHeading() {
+    const headings = document.querySelectorAll('h2[id], h3[id]');
+    const scrollPosition = window.scrollY + 100;
+
+    headings.forEach(heading => {
+      if (heading.offsetTop <= scrollPosition) {
+        
+        heading.classList.add('in-view');
+      } else {
+        heading.classList.remove('in-view');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveHeading, { passive: true });
+
+  
+  const pageHeader = document.querySelector('.page-header');
+  if (pageHeader) {
+    window.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      pageHeader.style.transform = 'translateY(' + scrolled * 0.5 + 'px)';
+    }, { passive: true });
+  }
+
+  
+  window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+  });
+
+  
+  const images = document.querySelectorAll('img');
+  images.forEach(img => {
+    if (!img.complete) {
+      img.addEventListener('load', function() {
+        this.classList.add('loaded');
+      });
+    } else {
+      img.classList.add('loaded');
+    }
+  });
+});
+
+
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.style.scrollBehavior = 'auto';
+}
+</script>
+
+
+<style>
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.in-view {
+  color: var(--accent-bright);
+}
+
+ 
+img {
+  display: block;
+}
+
+ 
+html {
+  scroll-padding-top: 80px;
+}
+
+ 
+.loading {
+  animation: skeleton-loading 1.5s infinite;
+  background: linear-gradient(90deg, var(--entry) 25%, var(--border) 50%, var(--entry) 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+ 
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+</style>
+<meta property="og:url" content="https://fdiskandar.com/">
+  <meta property="og:site_name" content="FD Iskandar">
   <meta property="og:title" content="FD Iskandar | Teknolog Strategis untuk Industri Air Indonesia">
   <meta property="og:description" content="30&#43; tahun membantu transformasi digital industri utilitas air Indonesia dengan governance yang kuat">
   <meta property="og:locale" content="id">
@@ -89,9 +209,9 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "FD Iskandar | Strategic Technologist",
+  "name": "FD Iskandar",
   "url": "https://fdiskandar.com/",
-  "description": "30+ tahun expertise di industri utilitas air Indonesia. Spesialisasi: Digital Transformation, GRC, NRW Management, Cybersecurity.",
+  "description": "Catatan perjalanan dan pembelajaran di sektor utilitas air Indonesia. Diskusi tentang transformasi, tata kelola, dan keberlanjutan.",
   "logo": "https://fdiskandar.com/favicon.ico",
   "sameAs": [
       "https://linkedin.com/in/ferli", "mailto:ferli.deni.iskandar@gmail.com"
@@ -103,28 +223,8 @@
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://fdiskandar.com/" accesskey="h" title="FD Iskandar | Strategic Technologist (Alt + H)">FD Iskandar | Strategic Technologist</a>
+            <a href="https://fdiskandar.com/" accesskey="h" title="FD Iskandar (Alt + H)">FD Iskandar</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
             </div>
         </div>
         <ul id="menu">
@@ -134,23 +234,23 @@
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/expertise/" title="Keahlian">
-                    <span>Keahlian</span>
+                <a href="https://fdiskandar.com/expertise/" title="Fokus Area">
+                    <span>Fokus Area</span>
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/insights/" title="Analisis &amp; Wawasan">
-                    <span>Analisis &amp; Wawasan</span>
+                <a href="https://fdiskandar.com/insights/" title="Analisis">
+                    <span>Analisis</span>
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/resources/" title="Resources &amp; Panduan">
-                    <span>Resources &amp; Panduan</span>
+                <a href="https://fdiskandar.com/resources/" title="Resources">
+                    <span>Resources</span>
                 </a>
             </li>
             <li>
-                <a href="https://fdiskandar.com/pemikiran/" title="Pemikiran Strategis">
-                    <span>Pemikiran Strategis</span>
+                <a href="https://fdiskandar.com/pemikiran/" title="Pemikiran">
+                    <span>Pemikiran</span>
                 </a>
             </li>
             <li>
@@ -164,11 +264,11 @@
 <main class="main"> 
 <div class="post-content"><h2 id="teknolog-strategis-untuk-industri-air-indonesia">Teknolog Strategis untuk Industri Air Indonesia<a hidden class="anchor" aria-hidden="true" href="#teknolog-strategis-untuk-industri-air-indonesia">#</a></h2>
 <p>Selama lebih dari 30 tahun, saya bekerja di industri IT dan infrastruktur air Indonesia. Yang saya pelajari adalah bahwa transformasi digital paling berhasil ketika dibangun atas fondasi governance yang kuat, operasi yang efisien, dan komitmen pada keberlanjutan.</p>
-<p>Saya bekerja dengan berbagai stakeholder — dari direksi PDAM yang menghadapi tantangan transformasi digital, manajer operasional yang mencari efisiensi, tim IT yang berjuang dengan sistem legacy, vendor teknologi yang ingin memahami kebutuhan pasar, hingga regulator yang perlu memastikan akuntabilitas. Setiap perspektif unik, dan setiap memberikan pembelajaran berharga.</p>
+<p>Saya bekerja dengan berbagai stakeholder — dari direksi utilitas air yang menghadapi tantangan transformasi digital, manajer operasional yang mencari efisiensi, tim IT yang berjuang dengan sistem legacy, vendor teknologi yang ingin memahami kebutuhan pasar, hingga regulator yang perlu memastikan akuntabilitas. Setiap perspektif unik, dan setiap memberikan pembelajaran berharga.</p>
 <p><strong>Fokus saya:</strong> Membantu industri air Indonesia berkembang melalui transformasi digital yang bertanggung jawab, governance yang transparan, dan operasi yang optimal.</p>
 <hr>
 <h2 id="untuk-siapa-konten-ini">Untuk Siapa Konten Ini?<a hidden class="anchor" aria-hidden="true" href="#untuk-siapa-konten-ini">#</a></h2>
-<p><strong>Pemimpin PDAM &amp; Utilitas Air</strong>
+<p><strong>Pemimpin utilitas air &amp; Utilitas Air</strong>
 Strategi transformasi digital, governance framework, manajemen risiko vendor</p>
 <p><strong>Manajer Operasional &amp; Tim IT</strong>
 Panduan praktis implementasi teknologi, checklist compliance, best practices</p>
@@ -198,7 +298,7 @@ Proteksi infrastruktur kritis, SCADA security, perlindungan data pelanggan, inci
 <h2 id="apa-yang-saya-bagikan">Apa yang Saya Bagikan<a hidden class="anchor" aria-hidden="true" href="#apa-yang-saya-bagikan">#</a></h2>
 <p>Melalui platform ini, saya berbagi:</p>
 <ul>
-<li><strong>Insight strategis</strong> — Analisis mendalam tentang tren dan tantangan industri air berdasarkan pengalaman saya membantu puluhan PDAM</li>
+<li><strong>Insight strategis</strong> — Analisis mendalam tentang tren dan tantangan industri air berdasarkan pengalaman saya membantu puluhan utilitas air</li>
 <li><strong>Framework praktis</strong> — Template, checklist, dan panduan yang sudah terbukti dalam implementasi nyata</li>
 <li><strong>Pembelajaran dari lapangan</strong> — Case studies dan insights dari transformasi digital yang saya dampingi, apa yang berhasil dan apa yang tidak</li>
 <li><strong>Edukasi berkelanjutan</strong> — Artikel, panduan, dan resources yang dirancang untuk membantu Anda dan tim meningkatkan kapabilitas</li>
@@ -210,11 +310,11 @@ Proteksi infrastruktur kritis, SCADA security, perlindungan data pelanggan, inci
 </div>
 <article class="first-entry home-info">
     <header class="entry-header">
-        <h1>Strategic Technologist for Water Utilities</h1>
+        <h1>Berbagi Pembelajaran untuk Utilitas Air</h1>
     </header>
     <div class="entry-content">
-        <p>Membantu organisasi air bertransformasi secara digital dengan governance yang kuat.</p>
-<p><strong>30+ tahun pengalaman</strong> | <strong>4 domain expertise</strong> | <strong>Publikasi &amp; knowledge sharing</strong></p>
+        <p>Kumpulan catatan, observasi, dan diskusi tentang transformasi digital, tata kelola, dan keberlanjutan layanan air bersih.</p>
+<p><strong>Berbagi Pengalaman</strong> | <strong>Diskusi Terbuka</strong> | <strong>Pembelajaran Kolektif</strong></p>
 
     </div>
     <footer class="entry-footer">
@@ -243,63 +343,64 @@ Proteksi infrastruktur kritis, SCADA security, perlindungan data pelanggan, inci
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Keamanan Siber
+    <h2 class="entry-hint-parent">Catatan tentang Keamanan Siber
     </h2>
   </header>
   <div class="entry-content">
-    <p>Keamanan Siber untuk Utilitas Air Cybersecurity bukan area yang saya hindar atau anggap “IT problem saja.” Dalam pengalaman saya, organisasi water utility yang paling resilient adalah yang melihat cybersecurity sebagai business imperative, bukan IT overhead. Saya telah membantu PDAM mengembangkan security posture dari “not even in the game” menjadi “competitive advantage.”
-Utilitas air adalah critical infrastructure dengan tanggung jawab langsung terhadap kesehatan publik, keamanan, dan sustainability layanan. Keamanan siber bukan pilihan atau compliance checkbox—ini adalah fundamental requirement untuk menjaga operational integrity dan public trust. Risk dari cyber attack—baik dari disruption maupun data breach—semakin real setiap tahun.
+    <p>Catatan tentang Keamanan Siber Keamanan siber (cybersecurity) di sektor air adalah tanggung jawab kolektif—bukan sekadar masalah teknis yang diserahkan sepenuhnya kepada tim IT. Pengamatan lapangan menunjukkan bahwa organisasi yang paling tangguh adalah mereka yang memahami keamanan sebagai prioritas bisnis: setiap lapisan, dari operator lapangan hingga direksi, memahami risiko dan peran mereka.
+Utilitas air adalah infrastruktur kritis dengan tanggung jawab langsung terhadap kesehatan publik. Risiko serangan siber—baik yang bersifat gangguan operasional maupun pencurian data—semakin nyata seiring dengan modernisasi sistem.
 ...</p>
   </div>
   <footer class="entry-footer"><span>FD Iskandar</span></footer>
-  <a class="entry-link" aria-label="post link to Keamanan Siber" href="https://fdiskandar.com/expertise/cybersecurity/"></a>
+  <a class="entry-link" aria-label="post link to Catatan tentang Keamanan Siber" href="https://fdiskandar.com/expertise/cybersecurity/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Pengurangan Air Hilang (NRW)
+    <h2 class="entry-hint-parent">Catatan tentang Pengurangan Air Hilang (NRW)
     </h2>
   </header>
   <div class="entry-content">
-    <p>Pengurangan Air Hilang (NRW) untuk Utilitas Air NRW adalah salah satu area yang paling membuat saya excited dalam bekerja dengan PDAM. Mengapa? Karena ini adalah domain di mana impact langsung bisa diukur—tidak abstract, tapi real: revenue meningkat, customers lebih puas, lingkungan lebih terlindungi. Saya telah membantu puluhan PDAM mencapai NRW reduction signifikan, dan setiap project memberikan learning yang berharga.
-Pengurangan Air Hilang (NRW — Non-Revenue Water) adalah air yang diproduksi namun tidak menghasilkan revenue karena dua sebab utama: kebocoran pada infrastruktur (physical loss) atau kehilangan komersial akibat kesalahan meter, koneksi ilegal, atau billing inefficiency (commercial loss).
+    <p>Catatan tentang Pengurangan Air Hilang (NRW) Pengurangan air hilang (NRW) adalah salah satu tantangan paling nyata di sektor air. Dampaknya langsung dan terukur: efisiensi operasional, pelayanan pelanggan, dan keberlanjutan sumber daya. Dari berbagai interaksi dengan utilitas air, terlihat bahwa keberhasilan dalam menurunkan NRW seringkali bukan karena teknologi yang paling mahal, melainkan kombinasi dari pemahaman masalah yang akurat, kedisiplinan tim lapangan, dan konsistensi monitoring.
+Bagi banyak utilitas air di Indonesia, angka NRW masih menjadi pekerjaan rumah besar. Namun, ini juga merupakan peluang perbaikan yang signifikan. Catatan ini merangkum beberapa pola dan pembelajaran yang sering muncul dalam upaya menangani isu ini.
 ...</p>
   </div>
   <footer class="entry-footer"><span>FD Iskandar</span></footer>
-  <a class="entry-link" aria-label="post link to Pengurangan Air Hilang (NRW)" href="https://fdiskandar.com/expertise/nrw/"></a>
+  <a class="entry-link" aria-label="post link to Catatan tentang Pengurangan Air Hilang (NRW)" href="https://fdiskandar.com/expertise/nrw/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Tata Kelola, Risiko &amp; Kepatuhan (GRC)
+    <h2 class="entry-hint-parent">Catatan tentang Tata Kelola &amp; Risiko (GRC)
     </h2>
   </header>
   <div class="entry-content">
-    <p>Tata Kelola, Risiko &amp; Kepatuhan untuk Utilitas Air Dalam karir saya, saya melihat ada dua tipe organisasi: yang mengview governance sebagai “birokrasi yang mengganggu” dan yang memahami governance sebagai “fondasi kesehatan organisasi.” Organisasi di kategori kedua selalu beroperasi lebih baik, lebih efisien, dan lebih resilient terhadap krisis.
-Tata kelola IT yang kuat adalah fondasi untuk operasi yang andal, efisien, dan compliant terhadap regulasi. Sebagai organisasi critical infrastructure yang melayani kebutuhan dasar masyarakat, utilitas air memiliki tanggung jawab khusus terhadap regulasi, stakeholders, dan transparansi operasional. GRC bukan optional—ini adalah keharusan untuk legitimate dan sustainable operations.
+    <p>Catatan tentang Tata Kelola, Risiko &amp; Kepatuhan (GRC) Dalam pengamatan di berbagai organisasi, sering terlihat dua cara pandang terhadap tata kelola (governance): ada yang melihatnya sebagai tumpukan birokrasi, dan ada yang memahaminya sebagai fondasi kesehatan organisasi. Organisasi yang berada di kelompok kedua biasanya lebih tangguh saat menghadapi krisis.
+Tata kelola IT yang baik bukan hanya soal aturan, tapi bagaimana memastikan operasi berjalan andal, efisien, dan patuh. Bagi utilitas air yang merupakan infrastruktur kritis, hal ini menjadi lebih krusial karena menyangkut tanggung jawab langsung kepada publik. GRC (Governance, Risk, Compliance) bukan sekadar pelengkap, melainkan kebutuhan untuk menjaga keberlanjutan layanan.
 ...</p>
   </div>
   <footer class="entry-footer"><span>FD Iskandar</span></footer>
-  <a class="entry-link" aria-label="post link to Tata Kelola, Risiko & Kepatuhan (GRC)" href="https://fdiskandar.com/expertise/grc/"></a>
+  <a class="entry-link" aria-label="post link to Catatan tentang Tata Kelola & Risiko (GRC)" href="https://fdiskandar.com/expertise/grc/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Transformasi Digital
+    <h2 class="entry-hint-parent">Catatan tentang Transformasi Digital
     </h2>
   </header>
   <div class="entry-content">
-    <p>Transformasi Digital untuk Utilitas Air Saya mulai bekerja di transformasi digital PDAM sejak era sistem berbasis mainframe. Saya melihat langsung organisasi yang berhasil vs yang gagal—dan setiap kali, keberhasilan bukan sekadar soal teknologi yang dipilih, tapi bagaimana organisasi mempersiapkan diri untuk perubahan.
-Transformasi digital bukan sekadar adopsi teknologi—ini adalah reimagining menyeluruh tentang bagaimana organisasi Anda beroperasi, melayani pelanggan, dan menciptakan nilai berkelanjutan di era digital. Pengalaman saya menunjukkan bahwa yang paling sering gagal adalah bukan teknologinya, tapi persiapan organisasi dan change management.
+    <p>Catatan tentang Transformasi Digital Dalam diskusi mengenai transformasi digital di sektor air, seringkali kita melihat bahwa keberhasilan bukan hanya soal teknologi, tetapi bagaimana kesiapan organisasi menghadapi perubahan. Ini bukan sekadar adopsi teknologi, melainkan sebuah imajinasi ulang tentang bagaimana sebuah utilitas beroperasi, melayani pelanggan, dan menciptakan nilai berkelanjutan.
+Pengamatan di lapangan sering menunjukkan bahwa kegagalan lebih sering disebabkan oleh kurangnya persiapan organisasi dan manajemen perubahan, bukan karena teknologinya itu sendiri.
+Tantangan yang Sering Kita Jumpai Bersama Hampir sebagian besar utilitas air di Indonesia menghadapi tantangan serupa dalam perjalanan digital mereka:
 ...</p>
   </div>
   <footer class="entry-footer"><span>FD Iskandar</span></footer>
-  <a class="entry-link" aria-label="post link to Transformasi Digital" href="https://fdiskandar.com/expertise/digital-transformation/"></a>
+  <a class="entry-link" aria-label="post link to Catatan tentang Transformasi Digital" href="https://fdiskandar.com/expertise/digital-transformation/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://fdiskandar.com/">FD Iskandar | Strategic Technologist</a></span> · 
+        <span>&copy; 2025 <a href="https://fdiskandar.com/">FD Iskandar</a></span> · 
 
     <span>
         Powered by
@@ -358,19 +459,6 @@ Transformasi digital bukan sekadar adopsi teknologi—ini adalah reimagining men
             mybutton.style.opacity = "0";
         }
     };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
 
 </script>
 </body>
